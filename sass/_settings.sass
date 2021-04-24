@@ -1,0 +1,21 @@
+.container
+  max-width: 1140px
+  margin: auto
+.body
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    background-image: url('../img/full-image.png')
+    background-repeat: no-repeat
+    background-attachment: local
+    background-position: center center
+    background-size: cover
+    background-color: #464646
+    height: 742px
+    z-index: -1
+.title
+  font-family: 'Roboto', sans-serif

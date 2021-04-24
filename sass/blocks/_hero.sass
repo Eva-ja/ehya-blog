@@ -1,0 +1,99 @@
+.hero
+  padding-top: 120px
+  padding-bottom: 96px
+  font-family: 'Open Sans', sans-serif
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    text-align: center
+    letter-spacing: 0.2px
+    margin-bottom: 40px
+    margin-top: 0
+    color: $light
+  &-block
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__menu
+      &-button
+        display: none
+  &__nav
+    width: 760px
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+  &-nav
+    &__menu
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: $light
+      margin: 0
+      margin-right: 13px
+  &-menu
+    display: flex
+    list-style: none
+    margin: 0
+    padding: 0
+    &__item
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      border: 1px solid #FFFFFF
+      border-radius: 4px
+      padding: 6px 18px
+      margin-right: 20px
+    &__link
+      text-decoration: none
+      color: $light
+.search
+  display: flex
+  position: relative
+  overflow: hidden
+  border-radius: 8px
+  height: 56px
+  width: 760px
+  margin-bottom: 24px
+  &:before
+    content: ''
+    position: absolute
+    top: 20px
+    left: 20px
+    margin: auto 0
+    width: 16px
+    height: 18px
+    background: url('../img/search.png') no-repeat
+    background-size: contain
+    z-index: 5
+  &__input
+    position: absolute
+    width: 100%
+    height: 100%
+    padding-left: 52px
+    padding-right: 122px
+    background-color: $light
+    border: none
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: #959EAD
+    outline: none
+  &__button
+    position: absolute
+    right: 8px
+    top: 8px
+    bottom: 8px
+    background: #1565D8
+    border-radius: 8px
+    text-decoration: none
+    color: $light
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    padding: 9px 21px
+    outline: none
+    border: none
+    cursor: pointer
+    text-align: center
