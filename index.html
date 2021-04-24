@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body class="body">
-  <header class="header">
+  <header class="header header--mobile_fixed">
     <div class="container">
         <div class="navbar-top">
           <a href="index.html" class="navbar-top__logo">
@@ -97,38 +97,56 @@
     </div>
     <!-- /.container -->
   </section>
-  <section class="featured">
-    <div class="container">
-      <div class="featured-block">
-        <div class="featured-photo">
-          <img src="img/Bus-stop.png" alt="Фото: Лондон" class="featured-photo__image">
-        </div>
-        <div class="featured-info">
-          <div class="featured-info__offer">Предложения</div>
-          <h2 class="featured__title">Дешевые Авиабилеты -<br> Отличный Способ Сэкономить</h2>
-          <p class="featured-text featured__text">В этом цифровом поколении, где информацию можно легко получить за
-            секунды, визитки ...</p>
-          <div class="featured-user">
-            <div class="featured-user__main">
-              <img src="img/avatar-first.png" alt="Аватар: Пользователя" class="featured-user__avatar">
-              <div class="featured-user__description">
-                <h3 class="featured-user__name">Viola Manisa</h3>
-                <span class="featured-user__verified"><img src="img/verified.svg" alt=""
-                    class="featured-user__icon">Verified
-                  writer</span>
-              </div>
-              <!-- /.featured-user__description -->
-            </div>
-            <span class="featured-user__date">02 May</span>
-            <!-- featured-user__main -->
-          </div>
-          <!-- feature-user -->
-        </div>
-        <!-- featured-info -->
+
+  <section class="mobile mobile-menu">
+    <div class="mobile-container">
+      <div class="mobile-content">
+        <ul class="mobile-menu__main">
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Домой</a></li>
+          <div class="line"></div>
+          <li class="mobile-menu__item">
+            <a href="#" class="parent mobile-menu__link">Лендинги <img src="img/angle-down.svg" alt="Больше" class="mobile-menu__more"></a>
+            <ul class="mobile-menu__main">
+              <li class="mobile-menu__item"><a href="#" class="back mobile-menu__link">Назад</a></li>
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Лендинги</a></li>
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Wix</a></li>
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Site123</a></li>
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">WordPress</a></li>
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">SquareSpace</a></li>
+            </ul>
+          </li class="mobile-menu__item">
+          <div class="line"></div>
+          <li class="mobile-menu__item">
+            <a href="#" class="parent mobile-menu__link">Страницы <img src="img/angle-down.svg" alt="Больше" class="mobile-menu__more"></a>
+            <ul class="mobile-menu__main">
+              <li class="mobile-menu__item"><a href="#" class="back mobile-menu__link">Назад</a></li>
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Главная</a></li>
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Блог</a></li>
+              <li class="mobile-menu__item">
+                <a href="#" class="parent mobile-menu__link">Cтатьи <img src="img/angle-down.svg" alt="Больше" class="mobile-menu__more"></a>
+                <ul class="mobile-menu__main">
+                  <li class="mobile-menu__item"><a href="#" class="back mobile-menu__link">Назад</a></li>
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Популярные статьи</a></li>
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Последние статьи</a></li>
+                  <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Все статьи</a></li>
+                </ul>
+              </li>
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Популярные теги</a></li>
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Подписка на статьи</a></li>
+            </ul>
+          </li>
+          <div class="line"></div>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Помощь</a></li>
+          <div class="line"></div>
+          <!-- <li class="mobile-menu__item"><a href="#" class="mobile-menu__link get">Получить</a></li> -->
+        </ul>
       </div>
-      <!-- /.featured-block -->
     </div>
-    <!-- /.container -->
+    <div class="overlay"></div>
   </section>
+  
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
