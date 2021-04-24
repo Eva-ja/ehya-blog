@@ -7,18 +7,16 @@
     grid: 1fr / 570px auto
     grid-column: span 2
     border-radius: 16px
-    border: 1px solid #E5EAF4
     box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
     overflow: hidden
   &-info
     padding-top: 32px
     padding-right: 48px
-    padding-bottom: 43px
+    padding-bottom: 34px
     padding-left: 32px
+    border: 1px solid #E5EAF4
     &__offer
-      width: 136px
-      padding-top: 6px
-      padding-bottom: 6px
+      padding: 6px 11px
       background: rgba(54,179,126, 0.1 )
       border-radius: 2000px
       font-weight: 600
@@ -26,7 +24,7 @@
       line-height: 20px
       text-align: center
       color: #36B37E
-      margin-bottom: 16px
+      text-decoration: none
   &-user
     display: flex
     align-items: center
@@ -42,7 +40,7 @@
       font-size: 16px
       line-height: 22px
       color: $dark
-      margin-bottom: 6px
+      margin-bottom: 4px
       margin-top: 0
     &__verified
       display: flex
@@ -72,10 +70,16 @@
     font-size: 31px
     margin-top: 0
     margin-bottom: 20px
+    margin-top: 22px
+  &-title
+    &__link
+      @include large-text
+      text-decoration: none
   &__text
+    max-width: 478px
     color: $text
     font-weight: 400
     font-size: 18px
     line-height: 32px
     margin-top: 0
-    margin-bottom: 22px
+    margin-bottom: 45px

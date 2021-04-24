@@ -1,3 +1,10 @@
+@media (min-width: 991px)
+  a:hover
+    color: $hover-link
+  button:hover
+    background-color: $button-hover
+  // .hover:hover
+  //   transform: scale(1.1)
 @media (max-width:1200px)
   .container
     max-width: 960px
@@ -17,6 +24,9 @@
     &-menu
       margin-right: 0
       margin-left: 0
+  .search
+    &__input
+      padding-right: 118px
   .featured
     &-block
       grid: 1fr / 300px auto
@@ -43,13 +53,6 @@
     &-menu
       display: none
       position: fixed
-      // right: 0
-      // top: 0
-      // left: 0
-      // background-color: $dark
-      // z-index: 10
-      // &--visible
-      //   display: block
     &-top
       &__link
         display: none
@@ -79,7 +82,7 @@
     &__search
       width: 100%
     &-menu
-      &__item
+      &__link
         margin-right: 13px
     &-nav
       width: 100%
@@ -89,13 +92,13 @@
     &-block
       grid: 230px auto / 1fr
       grid-column: unset
+  .search
+    &__input
+      width: 71%
 @media ( max-width: 576px )
   .header
     padding-top: 20px
     padding-bottom: 20px
-    // &::after
-    //   background-position: top center
-    //   height: 549px
   .navbar
     &-top
       &__logo
@@ -139,11 +142,15 @@
         padding-bottom: 2px
         text-transform: uppercase
         margin-bottom: 8px
+  .search
+    &__input
+      width: 60%
+      padding-right: 160px
 @media ( max-width: 592px )
   .hero
     &-menu
       flex-wrap: wrap
-      &__item
+      &__link
         margin-top: 11px
 @media screen and (min-width: 320px) and (max-width: 479px)
   .container
@@ -178,9 +185,10 @@
       padding: 13px 110px
     &__input
       height: 46px
-      width: 227px
+      width: 219px
       border-radius: 8px
-      padding-right: 0
+      padding-right: 8p
+      x
       padding-left: 44px
   .featured
     &-block

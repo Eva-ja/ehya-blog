@@ -16,9 +16,6 @@
     display: flex
     flex-direction: column
     align-items: center
-    &__menu
-      &-button
-        display: none
   &__nav
     width: 760px
     display: flex
@@ -37,19 +34,18 @@
     list-style: none
     margin: 0
     padding: 0
-    &__item
+    &__link
+      display: block
+      padding: 6px 18px
       font-weight: normal
       font-size: 14px
       line-height: 20px
       border: 1px solid #FFFFFF
       border-radius: 4px
-      padding: 6px 18px
       margin-right: 20px
-    &__link
       text-decoration: none
       color: $light
 .search
-  display: flex
   position: relative
   overflow: hidden
   border-radius: 8px
@@ -69,7 +65,11 @@
     z-index: 5
   &__input
     position: absolute
-    width: 100%
+    right: 0
+    left: 0
+    top: 0
+    bottom: 0
+    width: 77%
     height: 100%
     padding-left: 52px
     padding-right: 122px
