@@ -1,12 +1,9 @@
-.popular
+.last
   padding-bottom: 96px
-  box-sizing: border-box
   &-main
     display: flex
     justify-content: space-between
     align-items: center
-    &__description
-      max-width: 668px
     &__title
       @include block-title
     &__subtitle
@@ -19,43 +16,33 @@
       margin-left: 11px
       display: flex
       align-items: center
-  &__offer
-    position: absolute
-    top: 32px
-    left: 32px
-    border-radius: 2000px
-    font-weight: 600
-    font-size: 16px
-    line-height: 22px
-    color: #36B37E
-    text-transform: uppercase
-    text-decoration: none
-    background-color: $light
-    width: 153px
-    height: 32px
-    padding-top: 5px
-    text-align: center
-  &-user
-    width: 100%
-    display: flex
-    justify-content: space-between
-    align-items: center
-    &__main
-      display: flex
-      align-items: center
   &-wrapper
     display: flex
     justify-content: space-between
-.card
+  &__title
+    @include card-small
+  &__text
+    @include card-text
+    margin-bottom: 23px
+  &-user
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__main
+      display: flex
+.small
+  font-size: 17px
+.block
   position: relative
   display: flex
   align-items: flex-start
   flex-direction: column
-  width: 555px
-  height: 600px
+  width: 360px
+  height: 500px
   border-radius: 16px
   overflow: hidden
-  padding: 32px 48px 42px 48px
+  padding: 32px 43px
   filter: drop-shadow(0px 20px 50px rgba(15, 24, 44, 0.15))
   &::before
     content: ''
@@ -76,17 +63,3 @@
     height: 100%
     object-fit: cover
     z-index: -2
-  &__title
-    margin-top: auto
-    font-family: 'Roboto',sans-serif
-    font-style: normal
-    font-weight: bold
-    font-size: 36px
-    line-height: 48px
-    color: $title-card
-  &-title
-    &__mother
-      margin-bottom: 38px
-    &__baby
-      width: 100%
-      margin-bottom: 76px
