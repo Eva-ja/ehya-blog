@@ -14,6 +14,7 @@ $(function() {
         e.preventDefault();
         $(".mobile-container").addClass("loaded");
         $(".overlay").fadeIn();
+        $(".close").addClass("overlay");
     });
     $(document).on("click", ".overlay", function(e) {
         $(".mobile-container").removeClass("loaded");
@@ -22,4 +23,15 @@ $(function() {
             $(".mobile-container .activity").removeClass("activity");
         });
     });
-})
+    $(document).keyup(function(e) {
+        e.preventDefault();
+     if (e.keyCode == 27) { 
+        $(".mobile-container").removeClass("loaded");
+        $(".close").removeClass("overlay");
+        $(this).fadeOut(function() {
+            $(".mobile-container .loaded").removeClass("loaded");
+            $(".mobile-container .activity").removeClass("activity");
+        });
+    }
+});
+});

@@ -30,7 +30,7 @@ for(i=0; i<arrow.length; i++){
     let subMenu=arrow[i].nextElementSibling;
     let thisArrow=arrow[i];
 
-    thisLink.classList.add('parent');
+    thisLink.classList.add('father');
     arrow[i].addEventListener('click', function(){
       subMenu.classList.toggle('open');
       thisArrow.classList.toggle('active');
