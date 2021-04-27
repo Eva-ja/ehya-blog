@@ -27,11 +27,10 @@
     display: flex
     align-items: center
     justify-content: space-between
-    margin-left: auto
-    margin-right: 82px
+    position: relative
+    list-style: none
     &__link
       color: $light
-      margin-left: 23px
       font-weight: 600
       font-size: 16px
       line-height: 22px
@@ -44,5 +43,106 @@
       line-height: 22px
       position: relative
       text-align: center
+      margin-left: 18px
+      &:first-child
+        margin-left: 0
+        margin-right: 12px
     &__more
       margin-bottom: 2px
+.menu
+  list-style: none
+  margin: 0
+  padding: 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-left: auto
+  margin-right: 82px
+  position: relative
+  list-style: none
+.menu a
+  text-decoration: none
+
+menu a.parent
+  margin: 0 30px 0 0
+
+.sub-menu__list
+  list-style: none
+  position: absolute
+  left: 0
+  top: 22px
+  background-color: #273037
+  display: none
+  z-index: 100
+  padding: 0 0 20px 0
+  opacity: 0.9
+  width: 180px
+  border-radius: 8px
+  text-align: left
+
+.sub-menu__item
+  padding: 12px 15px
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+
+.sub-menu__link
+  color: #fff
+  font-size: 14px
+  color: white
+  text-align: left
+  font-size: 13px
+
+.sub-sub-menu__list
+  position: absolute
+  top: 0
+  left: 100%
+  list-style: none
+  background-color: #273037
+  display: none
+  z-index: 100
+  padding: 0 0 20px 0
+  opacity: 0.9
+  width: 180px
+  border-radius: 8px
+  text-align: left
+
+.sub-sub-menu__item
+  padding: 12px 15px
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+
+.sub-sub-menu__link
+  color: #fff
+  font-size: 14px
+  color: white
+  text-align: left
+  font-size: 13px
+
+.arrow.active
+  transform: rotate(-180deg)
+
+.arrow
+  display: none
+  position: absolute
+  top: 4px
+  width: 9px
+  height: 16px
+  right: 0
+
+.sub-menu__arrow
+  top: 112px
+  right: 100px
+.sub-menu__arrow
+  transform: rotate(-90deg)
+body.mouse .navbar-menu > li:hover .sub-menu__list
+  display: block
+
+body.mouse .sub-menu__list > li:hover .sub-sub-menu__list
+  display: block
+
+body.touch .sub-menu__list.open
+  display: block
+
+body.touch .sub-sub-menu__list.open
+  display: block
+
+body.touch .arrow
+  display: block

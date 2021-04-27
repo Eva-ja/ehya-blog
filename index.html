@@ -13,20 +13,78 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 <body class="body">
-  <header class="header header--mobile_fixed">
+  <header class="header">
     <div class="container">
         <div class="navbar-top">
           <a href="index.html" class="navbar-top__logo">
             <img src="img/Logo.png" alt="Icon: Logo" class="navbar-top__image">
           </a>
 
+          <nav class="menu">
           <ul class="navbar-menu">
-            <li class="navbar-menu__item"><a href="index.html" class="navbar-menu__link">Домой</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Лендинги <img src="img/angle-down.svg" alt="Больше" class="navbar-menu__more"> </a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Страницы <img src="img/angle-down.svg" alt="Больше" class="navbar-menu__more"> </a></li>
-            <li class="navbar-menu__item"> <a href="#" class="navbar-menu__link">Помощь</a></li>
+            <li class="navbar-menu__item">
+              <a href="index.html" class="navbar-menu__link">Домой</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#" class="navbar-menu__link">Лендинги <img src="img/angle-down.svg" alt="down"></a>
+              <img src="img/angle-down.svg" alt="" class="navbar-menu__arrow arrow">
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Лендинги</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Wix</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Site123</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">WordPress</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">SquareSpace</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#" class="navbar-menu__link">Страницы <img src="img/angle-down.svg" alt="down"></a>
+              <img src="img/angle-down.svg" alt="" class="navbar-menu__arrow arrow">
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Главная</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Блог</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Статьи</a>
+                  <img src="img/angle-down.svg" alt="" class="sub-menu__arrow arrow">
+                  <ul class="sub-sub-menu__list">
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Популярные статьи</a>
+                    </li>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Последние статьи</a>
+                    </li>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Все статьи</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Популярные теги</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Подписка на статьи</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#" class="navbar-menu__link">Помощь</a>
+            </li>
           </ul>
           <!-- navbar-menu -->
+          </nav> 
 
           <a href="#" class="navbar-top__link">Получить</a>
 
@@ -189,7 +247,7 @@
           <!--last-user -->
         </div>
         <!-- block -->
-        <div class="block last__block mobile">
+        <div class="block last__block investment">
           <img src="img/mobile.png" alt="Фото: Блог" class="block__image block__img">
           <a class="last__title last-title">Будущее Данных</a>
           <p class="last-text last__text">Благодаря нескончаемым объемам данных и количеству инсайтов</p>
@@ -415,7 +473,7 @@
           <!--last-user -->
         </div>
         <!-- block -->
-        <div class="block last__block mobile">
+        <div class="block last__block investment">
           <img src="img/machine.png" alt="Фото: Блог" class="block__image block__img">
           <a class="last__title last-title">Будущее Данных</a>
           <p class="last-text last__text">Благодаря нескончаемым объемам данных и количеству инсайтов</p>
@@ -481,6 +539,37 @@
     </div>
     <!-- /.container -->
   </section>
+
+  <section class="review">
+    <div class="container">
+      <div class="review-card">
+        <div class="review-block">
+          <h3 class="review-block__title">Получите наши истории на ваш почтовый ящик еженедельно.</h3>
+          <form action="#" class="email email__search">
+            <input type="text" placeholder="Ваш Email" class="email__input">
+            <a class="email__button"> Начать </a>
+          </form>
+          <p class="review-text review__text">Получите ответ завтра, если отправите его до 9 вечера сегодня. Если мы получили
+            после 9 вечера, мы получим ответ на следующий день.</p>
+        </div>
+        <!-- /.review-block -->
+        <div class="advertizing-block">
+          <img src="img/joystick.png" alt="Фото: Реклама" class="advertizing__image">
+          <div class="advertizing-block__info">
+            <h3 class="advertizing__title">Лучшие статьи каждую неделю</h3>
+            <p class="advertizing-text advertizing__text">Наши предложения по страхованию везде одинаковы.</p>
+          </div>
+        </div>
+        <!-- /.advertizing-block -->
+      </div>
+      <!-- /.review-card -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <div class="line-section">
+
+  </div>
 
   <section class="mobile mobile-menu">
     <div class="mobile-container">

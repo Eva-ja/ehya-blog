@@ -1,0 +1,124 @@
+.review
+  position: relative
+  background-color: $footer
+  padding-bottom: 138px
+  padding-top: 175px
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    background-image: url('../img/wave.svg')
+    background-repeat: no-repeat
+    background-attachment: local
+    background-position: center center
+    background-size: cover
+    background-color: $light
+    height: 174px
+  &-card
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &::before
+      content: ''
+      position: absolute
+      top: 220px
+      right: 51px
+      background-image: url('../img/blue-block.svg')
+      background-repeat: no-repeat
+      width: 237px
+      height: 200px
+      box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.15)
+      border-radius: 16px
+    &::after
+      content: ''
+      position: absolute
+      bottom: 52px
+      right: 480px
+      background-repeat: no-repeat
+      width: 237px
+      height: 200px
+      border-radius: 16px
+  &-block
+    &__title
+      font-family: 'Roboto', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 48px
+      letter-spacing: 0.2px
+      color: $light
+      margin-top: 0
+      margin-bottom: 48px
+  &__text
+    font-weight: normal
+    font-size: 16px
+    line-height: 28px
+    color: $text
+    max-width: 555px
+.email
+  font-family: 'Open Sans', sans-serif
+  display: flex
+  margin-bottom: 24px
+  &__input
+    font-family: 'Open Sans', sans-serif
+    font-size: 16px
+    line-height: 22px
+    background-color: $light
+    border-radius: 8px
+    height: 56px
+    width: 320px
+    padding: 17px 16px
+    color: rgba(90, 113, 132, 0.75)
+    margin-right: 8px
+    border: none
+    outline: none
+  &__button
+    display: block
+    width: 166px
+    height: 56px
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    border-radius: 8px
+    background-color: $watch
+    color: $light
+    text-align: center
+    padding-top: 16px
+.advertizing
+  &-block
+    position: relative
+    background-color: $light
+    padding: 8px 8px 32px 8px
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.15)
+    border-radius: 16px
+    &__info
+      padding-right: 56px
+      padding-left: 24px
+  &__image
+    width: 450px
+    height: 212px
+    object-fit: cover
+    border-radius: 12px
+  &__title
+    font-family: 'Roboto', sans-serif
+    letter-spacing: 0.2px
+    color: $title
+    font-weight: bold
+    font-size: 24px
+    line-height: 32px
+    margin-top: 28px
+    margin-bottom: 12px
+  &__text
+    font-weight: 400
+    font-size: 18px
+    line-height: 32px
+    color: $text
+    margin-top: 0
+    margin-bottom: 0
+.line
+  &-section
+    height: 1px
+    width: 100%
+    background-color: #1A3245
