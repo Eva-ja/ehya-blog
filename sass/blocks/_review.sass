@@ -20,27 +20,6 @@
     display: flex
     align-items: center
     justify-content: space-between
-    flex-wrap: wrap
-    &::before
-      content: ''
-      position: absolute
-      top: 220px
-      right: 51px
-      background-image: url('../img/blue-block.svg')
-      background-repeat: no-repeat
-      width: 237px
-      height: 200px
-      box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.15)
-      border-radius: 16px
-    &::after
-      content: ''
-      position: absolute
-      bottom: 52px
-      right: 480px
-      background-repeat: no-repeat
-      width: 237px
-      height: 200px
-      border-radius: 16px
   &-block
     &__title
       font-family: 'Roboto', sans-serif
@@ -53,6 +32,7 @@
       margin-top: 0
       margin-bottom: 48px
   &__text
+    font-family: 'Open Sans', sans-serif
     font-weight: normal
     font-size: 16px
     line-height: 28px
@@ -88,6 +68,31 @@
     text-align: center
     padding-top: 16px
 .advertizing
+  &-wrapper
+    width: 466px
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 42px
+      right: -51px
+      background-image: url('../img/blue-block.svg')
+      background-repeat: no-repeat
+      width: 237px
+      height: 200px
+      box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.15)
+      border-radius: 16px
+    &::after
+      content: ''
+      position: absolute
+      bottom: -51px
+      left: -61px
+      background-image: url('../img/Base.svg')
+      background-repeat: no-repeat
+      width: 237px
+      height: 200px
+      box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.15)
+      border-radius: 16px
   &-block
     position: relative
     background-color: $light
@@ -112,10 +117,12 @@
     margin-top: 28px
     margin-bottom: 12px
   &__text
-    font-weight: 400
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-weight: normal
     font-size: 18px
     line-height: 32px
-    color: $text
+    color: #5A7184
     margin-top: 0
     margin-bottom: 0
 .line
