@@ -107,16 +107,16 @@
           <div class="hero-icon">
             <input type="text" placeholder="Поиск постов" class="search__input">
           </div>
-          <a class="search__button find"> Поиск
+          <a class="search__button find button"> Поиск
           </a>
         </form>
 
         <nav class="hero__nav hero-nav">
           <p class="hero-nav__menu">Популярные Тэги :</p>
           <div class="hero-menu">
-            <a href="#" class="hero-menu__link">Design</a>
-            <a href="#" class="hero-menu__link">User Experience</a>
-            <a href="#" class="hero-menu__link">User Interfaces</a>
+            <a href="#" class="hero-menu__link button">Design</a>
+            <a href="#" class="hero-menu__link button">User Experience</a>
+            <a href="#" class="hero-menu__link button">User Interfaces</a>
           </div>
         </nav>
 
@@ -165,7 +165,10 @@
           <h2 class="popular-main__title">Популярные Статьи</h2>
           <p class="popular-main__subtitle subtitle">Мы делимся общими тенденциями, стратегическими идеями, мнениями, короткими и длинными историями команды, стоящей за компанией.</p>
         </div>
-        <a href="#" class="popular-main__link button">Смотреть все <img src="img/watch-all.svg" alt="Иконка: смотреть больше" class="popular-main__icon"></a>
+        <div class="popular-main__button watch-more button">
+          <a href="#" class="popular-main__link watch-more__link">Смотреть все</a>
+          <img src="img/watch-all.svg" alt="Иконка: смотреть больше" class="popular-main__icon watch-more__icon">
+        </div>
       </div>
       <!-- popular-main -->
         <div class="popular-wrapper">
@@ -222,35 +225,39 @@
           <h2 class="last-main__title">Последние Статьи</h2>
           <p class="last-main__subtitle subtitle">Вот чем мы занимались в последнее время.</p>
         </div>
-        <a href="#" class="last-main__link">Смотреть все <img src="img/watch-all.svg"
-        alt="Иконка: смотреть больше" class="last-main__icon"></a>
+        <div class="last-main__button watch-more button">
+          <a href="#" class="last-main__link watch-more__link">Смотреть все</a>
+          <img src="img/watch-all.svg" alt="Иконка: смотреть больше" class="last-main__icon watch-more__icon">
+        </div>
       </div>
       <!-- last-main -->
       <div class="last-wrapper">
         <div class="block last__block computer">
-          <img src="img/computer.png" alt="Фото: Блог" class="block__image block__img">
-          <a class="last__title last-title">Будущее Работы</a>
-          <p class="last-text last__text small">Большинство людей будут работать на рабочих местах, которых сегодня не существует.</p>
-          <div class="last-user">
-            <div class="last-user__main">
-              <img src="img/Lina.png" alt="Аватар: Пользователя" class="last-user__avatar avatar">
-              <div class="last-user__description">
-                <h3 class="last-user__name name">Lina Hicks</h3>
-                <span class="last-user__verified verified"><img src="img/verified.svg" alt="Иконка: Потверждения"
-                    class="last-user__icon icon">Verified writer</span>
+            <a href="avialine.html" class="last-block__link"><img src="img/computer.png" alt="Фото: Блог" class="block__image block__img"></a>
+            <a class="last__title last-title">Будущее Работы</a>
+            <p class="last-text last__text small">Большинство людей будут работать на рабочих местах, которых сегодня не существует.
+            </p>
+            <div class="last-user">
+              <div class="last-user__main">
+                <img src="img/Lina.png" alt="Аватар: Пользователя" class="last-user__avatar avatar">
+                <div class="last-user__description">
+                  <h3 class="last-user__name name">Lina Hicks</h3>
+                  <span class="last-user__verified verified"><img src="img/verified.svg" alt="Иконка: Потверждения"
+                      class="last-user__icon icon">Verified writer</span>
+                </div>
+                <!-- /.last-user__description -->
               </div>
-              <!-- /.last-user__description -->
+              <span class="last-user__date date">02 May</span>
+              <!-- last-user__main -->
             </div>
-            <span class="last-user__date date">02 May</span>
-            <!-- last-user__main -->
-          </div>
-          <!--last-user -->
+            <!--last-user -->
+          </a>
         </div>
         <!-- block -->
         <div class="block last__block investment">
-          <img src="img/mobile.png" alt="Фото: Блог" class="block__image block__img">
-          <a class="last__title last-title">Будущее Данных</a>
-          <p class="last-text last__text">Благодаря нескончаемым объемам данных и количеству инсайтов</p>
+          <a href="avialine.html" class="last-block__link"><img src="img/mobile.png" alt="Фото: Блог" class="block__image block__img"></a>
+          <a class="last__title last-title ">Будущее Данных</a>
+          <p class="last-text last__text base">Благодаря нескончаемым объемам данных и количеству инсайтов</p>
           <div class="last-user">
             <div class="last-user__main">
               <img src="img/Taler.png" alt="Аватар: Пользователя" class="last-user__avatar avatar">
@@ -267,7 +274,7 @@
         </div>
         <!-- block -->
         <div class="block last__block watch">
-          <img src="img/glass-man.png" alt="Фото: Блог" class="block__image block__img">
+          <a href="avialine.html" class="last-block__link"><img src="img/glass-man.png" alt="Фото: Блог" class="block__image block__img"></a>
           <a class="last__title last-title">Будущее Обучения</a>
           <p class="last-text last__text future">Постоянная способность учиться будет на самых важных навыках.</p>
           <div class="last-user">
@@ -292,123 +299,128 @@
     <!-- container -->
   </section>
 
-  <section class="example">
-      <div class="container">
-        <div class="example-main">
-          <div class="example-main__description">
-            <h2 class="example-main__title">Примеры из практики</h2>
-            <p class="example-main__subtitle subtitle">Вот чем мы занимались в последнее время.</p>
-          </div>
-          <a href="#" class="example-main__link">Смотреть все <img src="img/watch-all.svg" alt="Иконка: смотреть больше"
-              class="last-main__icon"></a>
-        </div>
-        <!-- example-main -->
+<section class="example">
+  <div class="container">
+    <div class="example-main">
+      <div class="example-main__description">
+        <h2 class="example-main__title">Примеры из практики</h2>
+        <p class="example-main__subtitle subtitle">Вот чем мы занимались в последнее время.</p>
       </div>
-      <!-- /.container -->
-      <div class=" container container-2">
-      <div class="example-info">
-        <div class="swiper-container example-slider">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="example-slider__item">
-                    <img src="img/country.png" alt="Фото: Лондон" class="example-photo__image">
-                  <div class="example-information">
-                    <a href="#" class="example-info__offer">Предложения</a>
-                    <a class="example-title__link" href="avialine.html">Дешевые Авиабилеты -<br> Отличный Способ Сэкономить</a>
-                    <p class="example-text example__text">В этом цифровом поколении, где информацию можно легко получить за секунды,
-                    визитки ...</p>
-                    <div class="example-user">
-                      <div class="example-user__main">
-                        <img src="img/avatar-first.png" alt="Аватар: Пользователя" class="example-user__avatar avatar">
-                        <div class="example-user__description">
-                          <h3 class="example-user__name name">Viola Manisa</h3>
-                          <span class="example-user__verified verified"><img src="img/verified.svg" alt=""
-                              class="example-user__icon icon">Verified
-                            writer</span>
-                        </div>
-                        <!-- /.example-user__description -->
-                      </div>
-                      <span class="example-user__date date">02 May</span>
-                      <!-- example-user__main -->
-                    </div>
-                    <!--example-user -->
-                  </div>
-                  <!-- example-info -->
-              </div>
-              <!-- /.example-slider__item -->
-            </div>
-            <!-- swiper-slide -->
-            <div class="swiper-slide">
-              <div class="example-slider__item">
-                    <img src="img/popularJ.png" alt="Фото: Лондон" class="example-photo__image">
-                  <div class="example-information">
-                    <a href="#" class="example-info__offer">Предложения</a>
-                    <a class="example-title__link" href="avialine.html">Как защитить свою<br> семью от угарного газа</a>
-                    <p class="example-text example__text">Большинство людей будут работать на рабочих местах, которых сегодня не существует.</p>
-                    <div class="example-user">
-                      <div class="example-user__main">
-                        <img src="img/joshuya.png" alt="Аватар: Пользователя" class="example-user__avatar avatar">
-                        <div class="example-user__description">
-                          <h3 class="example-user__name name">Joshua William</h3>
-                          <span class="example-user__verified verified"><img src="img/verified.svg" alt=""
-                              class="example-user__icon icon">Verified
-                            writer</span>
-                        </div>
-                        <!-- /.example-user__description -->
-                      </div>
-                      <span class="example-user__date date">21 March</span>
-                      <!-- example-user__main -->
-                    </div>
-                    <!--example-user -->
-                  </div>
-                  <!-- example-info -->
-              </div>
-              <!-- /.example-slider__item -->
-            </div>
-            <div class="swiper-slide">
-              <div class="example-slider__item">
-                    <img src="img/popularV.png" alt="Фото: Лондон" class="example-photo__image">
-                  <div class="example-information">
-                    <a href="#" class="example-info__offer">Предложения</a>
-                    <a class="example-title__link" href="avialine.html">Материнство - самая трудная и лучшая работа на свете</a>
-                    <p class="example-text example__text">Благодаря нескончаемым объемам данных и количеству инсайтов</p>
-                    <div class="example-user">
-                      <div class="example-user__main">
-                        <img src="img/Taler.png" alt="Аватар: Пользователя" class="example-user__avatar avatar">
-                        <div class="example-user__description">
-                          <h3 class="example-user__name name">Tyler Murray</h3>
-                          <span class="example-user__verified verified"><img src="img/verified.svg" alt=""
-                              class="example-user__icon icon">Verified
-                            writer</span>
-                        </div>
-                        <!-- /.example-user__description -->
-                      </div>
-                      <span class="example-user__date date">20 June</span>
-                      <!-- example-user__main -->
-                    </div>
-                    <!--example-user -->
-                  </div>
-                  <!-- example-info -->
-              </div>
-              <!-- /.example-slider__item -->
-            </div>
-          </div>
-          <!-- /.swiper-wrapper -->
-          <button class="example-slider__button example-slider__button--prev"></button>
-          <button class="example-slider__button example-slider__button--next"></button>
-        </div>
-        <!-- example-slider -->
+      <div class="example-main__button watch-more button">
+        <a href="#" class="example-main__link watch-more__link">Смотреть все</a>
+        <img src="img/watch-all.svg" alt="Иконка: смотреть больше" class="example-main__icon watch-more__icon">
       </div>
-      <!-- /.example-info -->
     </div>
-    <!-- /.container-2 -->
-  </section>
+    <!-- example-main -->
+
+    <div class="example-info">
+      <div class="swiper-container example-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="example-slider__item">
+              <div class="example-photo__image"></div>
+              <!-- <img src="img/country.png" alt="Фото: Лондон" class="example-photo__image"> -->
+              <div class="example-information">
+                <a href="#" class="example-info__offer">Предложения</a>
+                <a class="example-title__link" href="avialine.html">Дешевые Авиабилеты -<br> Отличный Способ
+                  Сэкономить</a>
+                <p class="example-text example__text">В этом цифровом поколении, где информацию можно легко получить за
+                  секунды,
+                  визитки ...</p>
+                <div class="example-user">
+                  <div class="example-user__main">
+                    <img src="img/avatar-first.png" alt="Аватар: Пользователя" class="example-user__avatar avatar">
+                    <div class="example-user__description">
+                      <h3 class="example-user__name name">Viola Manisa</h3>
+                      <span class="example-user__verified verified"><img src="img/verified.svg" alt=""
+                          class="example-user__icon icon">Verified
+                        writer</span>
+                    </div>
+                    <!-- /.example-user__description -->
+                  </div>
+                  <span class="example-user__date date">02 May</span>
+                  <!-- example-user__main -->
+                </div>
+                <!--example-user -->
+              </div>
+              <!-- example-info -->
+            </div>
+            <!-- /.example-slider__item -->
+          </div>
+          <!-- swiper-slide -->
+          <div class="swiper-slide">
+            <div class="example-slider__item">
+              <img src="img/popularJ.png" alt="Фото: Лондон" class="example-photo__image">
+              <div class="example-information">
+                <a href="#" class="example-info__offer">Предложения</a>
+                <a class="example-title__link" href="avialine.html">Как защитить свою<br> семью от угарного газа</a>
+                <p class="example-text example__text">Большинство людей будут работать на рабочих местах, которых
+                  сегодня не существует.</p>
+                <div class="example-user">
+                  <div class="example-user__main">
+                    <img src="img/joshuya.png" alt="Аватар: Пользователя" class="example-user__avatar avatar">
+                    <div class="example-user__description">
+                      <h3 class="example-user__name name">Joshua William</h3>
+                      <span class="example-user__verified verified"><img src="img/verified.svg" alt=""
+                          class="example-user__icon icon">Verified
+                        writer</span>
+                    </div>
+                    <!-- /.example-user__description -->
+                  </div>
+                  <span class="example-user__date date">21 March</span>
+                  <!-- example-user__main -->
+                </div>
+                <!--example-user -->
+              </div>
+              <!-- example-info -->
+            </div>
+            <!-- /.example-slider__item -->
+          </div>
+          <div class="swiper-slide">
+            <div class="example-slider__item">
+              <img src="img/popularV.png" alt="Фото: Лондон" class="example-photo__image">
+              <div class="example-information">
+                <a href="#" class="example-info__offer">Предложения</a>
+                <a class="example-title__link" href="avialine.html">Материнство - самая трудная и лучшая работа на
+                  свете</a>
+                <p class="example-text example__text">Благодаря нескончаемым объемам данных и количеству инсайтов</p>
+                <div class="example-user">
+                  <div class="example-user__main">
+                    <img src="img/Taler.png" alt="Аватар: Пользователя" class="example-user__avatar avatar">
+                    <div class="example-user__description">
+                      <h3 class="example-user__name name">Tyler Murray</h3>
+                      <span class="example-user__verified verified"><img src="img/verified.svg" alt=""
+                          class="example-user__icon icon">Verified
+                        writer</span>
+                    </div>
+                    <!-- /.example-user__description -->
+                  </div>
+                  <span class="example-user__date date">20 June</span>
+                  <!-- example-user__main -->
+                </div>
+                <!--example-user -->
+              </div>
+              <!-- example-info -->
+            </div>
+            <!-- /.example-slider__item -->
+          </div>
+        </div>
+        <!-- /.swiper-wrapper -->
+      </div>
+      <!-- example-slider -->
+      <button class="example-slider__button example-slider__button--prev"></button>
+      <button class="example-slider__button example-slider__button--next"></button>
+    </div>
+    <!-- /.example-info -->
+  </div>
+  <!-- /.container -->
+</section>
 
   <section class="all">
     <div class="container">
       <h2 class="all__title">Все cтатьи</h2>
-      <p class="all__subtitle">Мы делимся общими тенденциями, стратегическими идеями,<br> мнениями, короткими и длинными историями команды, стоящей за компанией.</p>
+      <p class="all__subtitle">Мы делимся общими тенденциями, стратегическими идеями, мнениями, короткими и длинными историями команды, стоящей за компанией.</p>
       <div class="all-wrapper">
         <div class="blog all_blog">
           <img src="img/hands.png" alt="Фото: Блог" class="blog__image blog__img">
@@ -452,7 +464,7 @@
           <!--all-user -->
         </div>
         <!-- blog -->
-        <div class="block last__block computer">
+        <div class="block all__block computer">
           <img src="img/table.png" alt="Фото: Блог" class="block__image block__img">
           <a class="last__title last-title">Будущее Работы</a>
           <p class="last-text last__text small">Большинство людей будут работать на рабочих местах, которых сегодня не
@@ -473,7 +485,27 @@
           <!--last-user -->
         </div>
         <!-- block -->
-        <div class="block last__block investment">
+        <div class="block all__block computer hide">
+          <img src="img/table.png" alt="Фото: Блог" class="block__image block__img">
+          <a class="last__title last-title">Будущее данных</a>
+          <p class="last-text last__text future">Благодаря нескончаемым объемам данных и количеству инсайтов</p>
+          <div class="last-user">
+            <div class="last-user__main">
+              <img src="img/Warren.png" alt="Аватар: Пользователя" class="last-user__avatar avatar">
+              <div class="last-user__description">
+                <h3 class="last-user__name name">Warren Casey</h3>
+                <span class="last-user__verified verified"><img src="img/verified.svg" alt="Иконка: Потверждения"
+                    class="last-user__icon icon">Verified writer</span>
+              </div>
+              <!-- /.last-user__description -->
+            </div>
+            <span class="last-user__date date">02 May</span>
+            <!-- last-user__main -->
+          </div>
+          <!--last-user -->
+        </div>
+        <!-- block -->
+        <div class="block all__block investment delete">
           <img src="img/machine.png" alt="Фото: Блог" class="block__image block__img">
           <a class="last__title last-title">Будущее Данных</a>
           <p class="last-text last__text">Благодаря нескончаемым объемам данных и количеству инсайтов</p>
@@ -493,8 +525,8 @@
           <!--last-user -->
         </div>
         <!-- block -->
-        <div class="block last__block watch">
-          <img src="img/old-mobile.png" alt="Фото: Блог" class="block__image block__img">
+        <div class="block all__block investment hide">
+          <img src="img/machine.png" alt="Фото: Блог" class="block__image block__img">
           <a class="last__title last-title">Будущее Обучения</a>
           <p class="last-text last__text future">Постоянная способность учиться будет на самых важных навыках.</p>
           <div class="last-user">
@@ -513,7 +545,27 @@
           <!--last-user -->
         </div>
         <!-- block -->
-        <div class="block last__block hide">
+        <div class="block all__block investment hide">
+          <img src="img/machine.png" alt="Фото: Блог" class="block__image block__img">
+          <a class="last__title last-title">Будущее Обучения</a>
+          <p class="last-text last__text future">Постоянная способность учиться будет на самых важных навыках.</p>
+          <div class="last-user">
+            <div class="last-user__main">
+              <img src="img/Warren.png" alt="Аватар: Пользователя" class="last-user__avatar avatar">
+              <div class="last-user__description">
+                <h3 class="last-user__name name">Warren Casey</h3>
+                <span class="last-user__verified verified"><img src="img/verified.svg" alt="Иконка: Потверждения"
+                    class="last-user__icon icon">Verified writer</span>
+              </div>
+              <!-- /.last-user__description -->
+            </div>
+            <span class="last-user__date date">02 May</span>
+            <!-- last-user__main -->
+          </div>
+          <!--last-user -->
+        </div>
+        <!-- block -->
+        <div class="block all__block watch delete">
           <img src="img/old-mobile.png" alt="Фото: Блог" class="block__image block__img">
           <a class="last__title last-title">Будущее Обучения</a>
           <p class="last-text last__text future">Постоянная способность учиться будет на самых важных навыках.</p>
@@ -534,42 +586,15 @@
         </div>
         <!-- block -->
       </div>
-      <a href="#" class="all__link">Больше постов <img src="img/watch-all.svg" alt="Иконка: смотреть больше"
-          class="all-icon all__icon"></a>
-    </div>
-    <!-- /.container -->
-  </section>
-
-  <section class="review">
-    <div class="container">
-      <div class="review-card">
-        <div class="review-block">
-          <h3 class="review-block__title">Получите наши истории на ваш почтовый ящик еженедельно.</h3>
-          <form action="#" class="email email__search">
-            <input type="text" placeholder="Ваш Email" class="email__input">
-            <a class="email__button"> Начать </a>
-          </form>
-          <p class="review-text review__text">Получите ответ завтра, если отправите его до 9 вечера сегодня. Если мы получили
-            после 9 вечера, мы получим ответ на следующий день.</p>
-        </div>
-        <!-- /.review-block -->
-        <div class="advertizing-block">
-          <img src="img/joystick.png" alt="Фото: Реклама" class="advertizing__image">
-          <div class="advertizing-block__info">
-            <h3 class="advertizing__title">Лучшие статьи каждую неделю</h3>
-            <p class="advertizing-text advertizing__text">Наши предложения по страхованию везде одинаковы.</p>
-          </div>
-        </div>
-        <!-- /.advertizing-block -->
+      <div class="all-button button">
+        <a href="#" class="all__link watch-more__link">Больше постов</a>
+        <img src="img/watch-all.svg" alt="Иконка: смотреть больше" class="all__icon watch-more__icon">
       </div>
-      <!-- /.review-card -->
     </div>
     <!-- /.container -->
   </section>
 
-  <div class="line-section">
-
-  </div>
+  <div class="line-section"></div>
 
   <section class="mobile mobile-menu">
     <div class="mobile-container">

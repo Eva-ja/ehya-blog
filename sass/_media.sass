@@ -3,8 +3,6 @@
     color: $hover-link
   button:hover
     background-color: $button-hover
-  // .hover:hover
-  //   transform: scale(1.1)
 @media (max-width:1200px)
   .container
     max-width: 960px
@@ -27,13 +25,20 @@
     padding: 25px
   .example
     &-slider
+      width: 960px
       &__item
-        grid: 1fr / 480px auto
-    &-photo
-      &__image
-        max-height: 462px
+        grid: 381px / 480px auto
+      &__button
+        &--prev
+          left: -10px
+        &--next
+          right: -10px
     &-information
       padding: 32px 32px 32px 32px
+    &-title
+      &__link
+        font-size: 25px
+        line-height: 30px
   .blog
     width: 470px
     height: 570px
@@ -42,8 +47,15 @@
 @media (max-width: 992px)
   .container
     max-width: 700px
-  .container-2
-    max-width: 754px
+  .example
+    &-slider
+      width: 700px
+      height: 442px
+      &__button
+        &--prev
+          left: -20px
+        &--next
+          right: -20px
   .body
     &::after
       height: 675px
@@ -80,14 +92,14 @@
       flex-wrap: wrap
       &__subtitle
         margin-bottom: 28px
-      &__link
+      &__button
         position: absolute
         bottom: 67px
         right: 50%
         transform: translateX(50%)
-        padding: 9px 20px 9px 18px
+        max-width: 173px
         height: 40px
-        min-width: 180px
+        padding: 9px 20px 9px 18px
   .card
     width: 100%
     height: 570px
@@ -97,20 +109,41 @@
     height: 440px
     margin-bottom: 10px
   .last
+    padding-bottom: 111px
+    position: relative
     &-wrapper
       flex-wrap: wrap
+    &-main
+      &__button
+        position: absolute
+        bottom: 43px
+        left: 50%
+        transform: translate(-50%)
+        max-width: 173px
+        height: 40px
+        padding: 9px 20px 9px 18px
   .computer
     flex-basis: 100%
     margin-bottom: 10px
   .investment, .watch
     flex-basis: 49%
   .example
-    padding-bottom: 70px
+    padding-bottom: 108px
+    &-main
+      &__button
+        position: absolute
+        bottom: 42px
+        left: 50%
+        transform: translate(-50%)
+        max-width: 173px
+        height: 40px
+        padding: 9px 20px 9px 18px
     &-slider
       &__item
-        grid: 462px / 300px auto
+        grid: 1fr / 300px auto
     &-title
       &__link
+        display: block
         line-height: 40px
         font-size: 26px
   .all
@@ -126,9 +159,6 @@
 @media (max-width: 767px)
   .container
     max-width: 576px
-    width: 92%
-  .container-2
-    max-width: 596px
     width: 92%
   .body
     &::after
@@ -149,8 +179,8 @@
   .menu
     &-button
       display: flex
-      width: 16px
-      height: 11px
+      width: 22px
+      height: 18px
       padding: 0
       align-items: center
       justify-content: space-between
@@ -160,8 +190,8 @@
       outline: none
       cursor: pointer
       &__line
-        width: 16px
-        height: 1px
+        width: 22px
+        height: 2px
         background-color: $light
   .hero
     padding-bottom: 80px
@@ -192,16 +222,8 @@
       &__icon
         margin-left: 8px
   .last
-    padding-bottom: 111px
-    position: relative
     &-main
       flex-wrap: wrap
-      &__link
-        position: absolute
-        bottom: 43px
-        left: 50%
-        transform: translate(-50%)
-        height: 40px
       &__description
         width: 100%
       &__title
@@ -214,25 +236,23 @@
     flex-basis: 100%
     margin-bottom: 13px
   .example
-    padding-bottom: 108px
     &-slider
+      width: 100%
+      max-width: 576px
+      height: 100%
       &__item
         grid: 250px auto / 1fr
         grid-column: unset
-        margin-right: 10px
-        margin-left: 10px
       &__button
         width: 40px
         height: 39px
         background-size: 13px 16px
         top: 47%
+        &--prev
+          left: -10px
+        &--next
+          right: -10px
     &-main
-      &__link
-        position: absolute
-        bottom: 42px
-        left: 50%
-        transform: translate(-50%)
-        height: 40px
       &__description
         width: 100%
         text-align: center
@@ -247,10 +267,12 @@
         margin-bottom: 10px
     &-info
       &__offer
-        margin-bottom: 8px
+        margin-bottom: 4px
     &__text
       margin-bottom: 25px
       line-height: 27px
+    &-information
+      border-radius: 0 0 16px 16px
   .all
     &__subtitle
       font-size: 16px
@@ -264,7 +286,7 @@
       width: 126px
       height: 24px
       top: 23px
-      right: 18px
+      left: 18px
       font-size: 14px
       line-height: 20px
       padding-top: 2px
@@ -340,10 +362,20 @@
       &__subtitle
         font-size: 14px
         line-height: 24px
+        margin-bottom: 13px
+        height: 42px
       &__title
         font-size: 24px
         line-height: 32px
   .example
+    &-main
+      &__title
+        font-size: 24px
+        line-height: 32px
+        margin-bottom: 12px
+      &__subtitle
+        font-size: 14px
+        line-height: 24px
     &-title
       &__link
         font-size: 20px
@@ -383,6 +415,33 @@
       &__button
         top: 50%
   .all
+    &-wrapper
+      margin-bottom: 16px
+    &-button
+      width: 172px
+      height: 40px
+      padding: 9px 20px 9px 18px
+    &-button
+      padding-left: 125px
+      position: relative
+      &::before
+        position: absolute
+        right: 23px
+        top: 0
+        left: 0
+        padding-top: 9px
+        padding-bottom: 9px
+        padding-left: 18px
+        padding-right: 18px
+        content: 'Смотреть все'
+        background-color: inherit
+        font-weight: bold
+        font-size: 16px
+        line-height: 22px
+        color: #1565D8
+        z-index: 100
+    &__link
+      display: none
     &__title
       font-size: 24px
       line-height: 32px
@@ -416,13 +475,35 @@
   .king
     margin-bottom: 50px
   .hide
-    display: block
+    display: flex
+  .delete
+    display: none
   .modal
     &__dialog
       padding: 33px 60px
       width: 400px
       &--new
         padding: 50px 20px
+  .avatar
+    width: 36px
+    height: 36px
+  .name
+    font-size: 14px
+    line-height: 20px
+    margin-bottom: 4px
+  .verified
+    font-size: 12px
+    line-height: 16px
+    font-weight: 400
+  .date
+    font-size: 14px
+    line-height: 20px
+  .base
+    margin-bottom: 20px
+    height: 48px
+  .future
+    margin-bottom: 20px
+    height: 48px
 @media ( max-width: 592px )
   .hero
     &-menu
@@ -432,8 +513,12 @@
 @media screen and (min-width: 320px) and (max-width: 479px)
   .container
     max-width: 288px
-  .container
+  .container-2
     max-width: 318px
+  .navbar
+    &-top
+      width: 272px
+      margin: auto
   .hero
     padding-top: 40px
     padding-bottom: 34px
@@ -452,7 +537,7 @@
     &-menu
       flex-wrap: wrap
     &-block
-      width: 280px
+      width: 272px
       margin: auto
   .search
     height: 108px
@@ -463,8 +548,13 @@
     &__button
       z-index: 3
       bottom: 0
+      right: 0
+      left: 0
       top: 60px
-      padding: 13px 110px
+      padding-top: 13px
+      padding-bottom: 13px
+      height: 48px
+      width: 272px
     &__input
       height: 46px
       width: 271px
@@ -478,6 +568,7 @@
     width: 240px
   .card
     height: 320px
+    margin-bottom: 16px
     &__title
       font-size: 20px
       line-height: 24px
@@ -512,13 +603,20 @@
   .block
     width: 288px
     margin-bottom: 16px
+  .blog
+    margin-bottom: 16px
   .example
     &-slider
       &__item
         grid: 160px auto / 1fr
       &__button
         top: 35%
+    &-photo
+      &__image
+        background-image: url(../img/Bus-stop.png)
   .modal
     &__dialog
       padding: 33px 20px
       width: 280px
+  .all
+    padding-bottom: 0

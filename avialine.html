@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ehya - Blog</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="container">
+      <div class="navbar-top">
+        <a href="index.html" class="navbar-top__logo">
+          <img src="img/Logo.png" alt="Icon: Logo" class="navbar-top__image">
+        </a>
+
+        <nav class="menu">
+          <ul class="navbar-menu">
+            <li class="navbar-menu__item">
+              <a href="index.html" class="navbar-menu__link">Домой</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#" class="navbar-menu__link">Лендинги <img src="img/angle-down.svg" alt="down"></a>
+              <img src="img/angle-down.svg" alt="" class="navbar-menu__arrow arrow">
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Лендинги</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Wix</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Site123</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">WordPress</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">SquareSpace</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#" class="navbar-menu__link">Страницы <img src="img/angle-down.svg" alt="down"></a>
+              <img src="img/angle-down.svg" alt="" class="navbar-menu__arrow arrow">
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Главная</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Блог</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Статьи</a>
+                  <img src="img/angle-down.svg" alt="" class="sub-menu__arrow arrow">
+                  <ul class="sub-sub-menu__list">
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Популярные статьи</a>
+                    </li>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Последние статьи</a>
+                    </li>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Все статьи</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Популярные теги</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Подписка на статьи</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-menu__item">
+              <a href="#" class="navbar-menu__link">Помощь</a>
+            </li>
+          </ul>
+          <!-- navbar-menu -->
+        </nav>
+
+        <a data-toggle="modal" href="#" class="navbar-top__link">Получить</a>
+
+        <button class="menu-button navbar-top__menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
+      </div>
+      <!-- navbar-top -->
+    </div>
+    <!-- container -->
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-block">
+        <h1 class="hero__title">Отдел новостей</h1>
+        <form action="#" class="search hero__search">
+          <div class="hero-icon">
+            <input type="text" placeholder="Поиск постов" class="search__input">
+          </div>
+          <a class="search__button find button"> Поиск
+          </a>
+        </form>
+
+        <nav class="hero__nav hero-nav">
+          <p class="hero-nav__menu">Популярные Тэги :</p>
+          <div class="hero-menu">
+            <a href="#" class="hero-menu__link button">Design</a>
+            <a href="#" class="hero-menu__link button">User Experience</a>
+            <a href="#" class="hero-menu__link button">User Interfaces</a>
+          </div>
+        </nav>
+
+      </div>
+      <!-- hero-block -->
+    </div>
+    <!-- /.containr -->
+  </section>
+
+  <section class="featured">
+    <div class="container">
+      <div class="featured-block">
+        <div class="featured-photo">
+          <img src="img/Bus-stop.png" alt="Фото: Лондон" class="featured-photo__image">
+        </div>
+        <div class="featured-info">
+          <a href="#" class="featured-info__offer">Предложения</a>
+          <a class="featured-title__link" href="avialine.html">Дешевые Авиабилеты -<br> Отличный Способ Сэкономить</a>
+          <p class="featured-text featured__text">В этом цифровом поколении, где информацию можно легко получить за
+            секунды, визитки ...</p>
+          <div class="featured-user">
+            <div class="featured-user__main">
+              <img src="img/avatar-first.png" alt="Аватар: Пользователя" class="featured-user__avatar avatar">
+              <div class="featured-user__description">
+                <h3 class="featured-user__name name">Viola Manisa</h3>
+                <span class="featured-user__verified verified"><img src="img/verified.svg" alt=""
+                    class="featured-user__icon icon">Verified
+                  writer</span>
+              </div>
+              <!-- /.featured-user__description -->
+            </div>
+            <span class="featured-user__date date">02 May</span>
+            <!-- featured-user__main -->
+          </div>
+          <!-- feature-user -->
+        </div>
+        <!-- featured-info -->
+      </div>
+      <!-- /.featured-block -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <section class="popular">
+    <div class="container">
+      <div class="popular-main">
+        <div class="popular-main__description">
+          <h2 class="popular-main__title">Популярные Статьи</h2>
+          <p class="popular-main__subtitle subtitle">Мы делимся общими тенденциями, стратегическими идеями, мнениями,
+            короткими и длинными историями команды, стоящей за компанией.</p>
+        </div>
+        <div class="popular-main__button watch-more button">
+          <a href="#" class="popular-main__link watch-more__link">Смотреть все</a>
+          <img src="img/watch-all.svg" alt="Иконка: смотреть больше" class="popular-main__icon watch-more__icon">
+        </div>
+      </div>
+      <!-- popular-main -->
+      <div class="popular-wrapper">
+        <div class="card popular__card">
+          <img src="img/popular-2.jpg" alt="Фото: Блог" class="card__image card__img">
+          <a href="#" class="popular__offer">Предложения</a>
+          <a href="avialine.html" class="card__title card-title card-title__baby">Как защитить свою<br> семью от
+            угарного газа</a>
+          <div class="popular-user">
+            <div class="popular-user__main">
+              <img src="img/avatar-first.png" alt="Аватар: Пользователя" class="popular-user__avatar avatar">
+              <div class="popular-user__description">
+                <h3 class="popular-user__name name">Viola Manisa</h3>
+                <span class="popular-user__verified verified"><img src="img/verified.svg" alt="Иконка: Потверждения"
+                    class="popular-user__icon icon">Verified
+                  writer</span>
+              </div>
+              <!-- /.popular-user__description -->
+            </div>
+            <span class="popular-user__date date">02 May</span>
+            <!-- popular-user__main -->
+          </div>
+          <!--popular-user -->
+        </div>
+        <!-- card -->
+        <div class="card popular__card">
+          <img src="img/popular-1.jpg" alt="Фото: Блог" class="card__image card__img">
+          <a href="#" class="popular__offer">Предложения</a>
+          <a href="avialine.html" class="card__title card-title card-title__mother">Материнство - самая трудная и лучшая
+            работа на свете</a>
+          <div class="popular-user">
+            <div class="popular-user__main">
+              <img src="img/joshuya.png" alt="Аватар: Пользователя" class="popular-user__avatar avatar">
+              <div class="popular-user__description">
+                <h3 class="popular-user__name name">Joshua William</h3>
+                <span class="popular-user__verified verified"><img src="img/verified.svg" alt=""
+                    class="popular-user__icon icon">Verified
+                  writer</span>
+              </div>
+              <!-- /.popular-user__description -->
+            </div>
+            <span class="popular-user__date date">02 May</span>
+            <!-- popular-user__main -->
+          </div>
+          <!--popular-user -->
+        </div>
+        <!-- card -->
+      </div>
+      <!-- popular-wrapper -->
+    </div>
+    <!-- container -->
+  </section>
+
+  <section class="last">
+    <div class="container">
+      <div class="last-main">
+        <div class="last-main__description">
+          <h2 class="last-main__title">Последние Статьи</h2>
+          <p class="last-main__subtitle subtitle">Вот чем мы занимались в последнее время.</p>
+        </div>
+        <div class="last-main__button watch-more button">
+          <a href="#" class="last-main__link watch-more__link">Смотреть все</a>
+          <img src="img/watch-all.svg" alt="Иконка: смотреть больше" class="last-main__icon watch-more__icon">
+        </div>
+      </div>
+      <!-- last-main -->
+      <div class="last-wrapper">
+        <div class="block last__block computer">
+          <a href="index.html" class="last-block__link"><img src="img/computer.png" alt="Фото: Блог" class="block__image block__img"></a>
+          <a class="last__title last-title">Будущее Работы</a>
+          <p class="last-text last__text small">Большинство людей будут работать на рабочих местах, которых сегодня не
+            существует.
+          </p>
+          <div class="last-user">
+            <div class="last-user__main">
+              <img src="img/Lina.png" alt="Аватар: Пользователя" class="last-user__avatar avatar">
+              <div class="last-user__description">
+                <h3 class="last-user__name name">Lina Hicks</h3>
+                <span class="last-user__verified verified"><img src="img/verified.svg" alt="Иконка: Потверждения"
+                    class="last-user__icon icon">Verified writer</span>
+              </div>
+              <!-- /.last-user__description -->
+            </div>
+            <span class="last-user__date date">02 May</span>
+            <!-- last-user__main -->
+          </div>
+          <!--last-user -->
+          </a>
+        </div>
+        <!-- block -->
+        <div class="block last__block investment">
+          <img src="img/mobile.png" alt="Фото: Блог" class="block__image block__img">
+          <a class="last__title last-title">Будущее Данных</a>
+          <p class="last-text last__text">Благодаря нескончаемым объемам данных и количеству инсайтов</p>
+          <div class="last-user">
+            <div class="last-user__main">
+              <img src="img/Taler.png" alt="Аватар: Пользователя" class="last-user__avatar avatar">
+              <div class="last-user__description">
+                <h3 class="last-user__name name">Tyler Murray</h3>
+                <span class="last-user__verified verified"><img src="img/verified.svg" alt="Иконка: Потверждения"
+                    class="last-user__icon icon">Verified writer</span>
+              </div>
+              <!-- /.last-user__description -->
+            </div>
+            <span class="last-user__date date">02 May</span>
+            <!-- last-user__main -->
+          </div>
+          <!--last-user -->
+        </div>
+        <!-- block -->
+        <div class="block last__block watch">
+          <img src="img/glass-man.png" alt="Фото: Блог" class="block__image block__img">
+          <a class="last__title last-title">Будущее Обучения</a>
+          <p class="last-text last__text future">Постоянная способность учиться будет на самых важных навыках.</p>
+          <div class="last-user">
+            <div class="last-user__main">
+              <img src="img/Warren.png" alt="Аватар: Пользователя" class="last-user__avatar avatar">
+              <div class="last-user__description">
+                <h3 class="last-user__name name">Warren Casey</h3>
+                <span class="last-user__verified verified"><img src="img/verified.svg" alt="Иконка: Потверждения"
+                    class="last-user__icon icon">Verified writer</span>
+              </div>
+              <!-- /.last-user__description -->
+            </div>
+            <span class="last-user__date date">02 May</span>
+            <!-- last-user__main -->
+          </div>
+          <!--last-user -->
+        </div>
+        <!-- block -->
+      </div>
+      <!-- last-wrapper -->
+    </div>
+    <!-- container -->
+  </section>
+
+  <section class="example">
+    <div class="container">
+      <div class="example-main">
+        <div class="example-main__description">
+          <h2 class="example-main__title">Примеры из практики</h2>
+          <p class="example-main__subtitle subtitle">Вот чем мы занимались в последнее время.</p>
+        </div>
+        <div class="example-main__button watch-more button">
+          <a href="#" class="example-main__link watch-more__link">Смотреть все</a>
+          <img src="img/watch-all.svg" alt="Иконка: смотреть больше" class="example-main__icon watch-more__icon">
+        </div>
+      </div>
+      <!-- example-main -->
+  
+      <div class="example-info">
+        <div class="swiper-container example-slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="example-slider__item">
+                <div class="example-photo__image"></div>
+                <!-- <img src="img/country.png" alt="Фото: Лондон" class="example-photo__image"> -->
+                <div class="example-information">
+                  <a href="#" class="example-info__offer">Предложения</a>
+                  <a class="example-title__link" href="avialine.html">Дешевые Авиабилеты -<br> Отличный Способ
+                    Сэкономить</a>
+                  <p class="example-text example__text">В этом цифровом поколении, где информацию можно легко получить за
+                    секунды,
+                    визитки ...</p>
+                  <div class="example-user">
+                    <div class="example-user__main">
+                      <img src="img/avatar-first.png" alt="Аватар: Пользователя" class="example-user__avatar avatar">
+                      <div class="example-user__description">
+                        <h3 class="example-user__name name">Viola Manisa</h3>
+                        <span class="example-user__verified verified"><img src="img/verified.svg" alt=""
+                            class="example-user__icon icon">Verified
+                          writer</span>
+                      </div>
+                      <!-- /.example-user__description -->
+                    </div>
+                    <span class="example-user__date date">02 May</span>
+                    <!-- example-user__main -->
+                  </div>
+                  <!--example-user -->
+                </div>
+                <!-- example-info -->
+              </div>
+              <!-- /.example-slider__item -->
+            </div>
+            <!-- swiper-slide -->
+            <div class="swiper-slide">
+              <div class="example-slider__item">
+                <img src="img/popularJ.png" alt="Фото: Лондон" class="example-photo__image">
+                <div class="example-information">
+                  <a href="#" class="example-info__offer">Предложения</a>
+                  <a class="example-title__link" href="avialine.html">Как защитить свою<br> семью от угарного газа</a>
+                  <p class="example-text example__text">Большинство людей будут работать на рабочих местах, которых
+                    сегодня не существует.</p>
+                  <div class="example-user">
+                    <div class="example-user__main">
+                      <img src="img/joshuya.png" alt="Аватар: Пользователя" class="example-user__avatar avatar">
+                      <div class="example-user__description">
+                        <h3 class="example-user__name name">Joshua William</h3>
+                        <span class="example-user__verified verified"><img src="img/verified.svg" alt=""
+                            class="example-user__icon icon">Verified
+                          writer</span>
+                      </div>
+                      <!-- /.example-user__description -->
+                    </div>
+                    <span class="example-user__date date">21 March</span>
+                    <!-- example-user__main -->
+                  </div>
+                  <!--example-user -->
+                </div>
+                <!-- example-info -->
+              </div>
+              <!-- /.example-slider__item -->
+            </div>
+            <div class="swiper-slide">
+              <div class="example-slider__item">
+                <img src="img/popularV.png" alt="Фото: Лондон" class="example-photo__image">
+                <div class="example-information">
+                  <a href="#" class="example-info__offer">Предложения</a>
+                  <a class="example-title__link" href="avialine.html">Материнство - самая трудная и лучшая работа на
+                    свете</a>
+                  <p class="example-text example__text">Благодаря нескончаемым объемам данных и количеству инсайтов</p>
+                  <div class="example-user">
+                    <div class="example-user__main">
+                      <img src="img/Taler.png" alt="Аватар: Пользователя" class="example-user__avatar avatar">
+                      <div class="example-user__description">
+                        <h3 class="example-user__name name">Tyler Murray</h3>
+                        <span class="example-user__verified verified"><img src="img/verified.svg" alt=""
+                            class="example-user__icon icon">Verified
+                          writer</span>
+                      </div>
+                      <!-- /.example-user__description -->
+                    </div>
+                    <span class="example-user__date date">20 June</span>
+                    <!-- example-user__main -->
+                  </div>
+                  <!--example-user -->
+                </div>
+                <!-- example-info -->
+              </div>
+              <!-- /.example-slider__item -->
+            </div>
+          </div>
+          <!-- /.swiper-wrapper -->
+        </div>
+        <!-- example-slider -->
+        <button class="example-slider__button example-slider__button--prev"></button>
+        <button class="example-slider__button example-slider__button--next"></button>
+      </div>
+      <!-- /.example-info -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+<section class="review">
+  <div class="container">
+    <div class="review-card">
+      <div class="review-block">
+        <h3 class="review-block__title">Получите наши истории на ваш почтовый ящик еженедельно.</h3>
+        <form action="#" class="email email__search">
+          <input type="text" placeholder="Ваш Email" class="email__input">
+          <a class="email__button button"> Начать </a>
+        </form>
+        <p class="review-text review__text">Получите ответ завтра, если отправите его до 9 вечера сегодня. Если мы
+          получили
+          после 9 вечера, мы получим ответ на следующий день.</p>
+      </div>
+      <!-- /.review-block -->
+      <div class="advertizing-block">
+        <img src="img/joystick.png" alt="Фото: Реклама" class="advertizing__image">
+        <div class="advertizing-block__info">
+          <h3 class="advertizing__title">Лучшие статьи каждую неделю</h3>
+          <p class="advertizing-text advertizing__text">Наши предложения по страхованию везде одинаковы.</p>
+        </div>
+      </div>
+      <!-- /.advertizing-block -->
+    </div>
+    <!-- /.review-card -->
+  </div>
+  <!-- /.container -->
+</section>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
