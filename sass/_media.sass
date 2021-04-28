@@ -116,6 +116,13 @@
   .all
     &__subtitle
       margin-bottom: 28px
+  .modal
+    &__info
+      flex-basis: 100%
+      margin-bottom: 15px
+      order: 1
+    &__button
+      order: 2
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -410,6 +417,12 @@
     margin-bottom: 50px
   .hide
     display: block
+  .modal
+    &__dialog
+      padding: 33px 60px
+      width: 400px
+      &--new
+        padding: 50px 20px
 @media ( max-width: 592px )
   .hero
     &-menu
@@ -505,3 +518,7 @@
         grid: 160px auto / 1fr
       &__button
         top: 35%
+  .modal
+    &__dialog
+      padding: 33px 20px
+      width: 280px

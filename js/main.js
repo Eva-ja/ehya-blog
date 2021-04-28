@@ -36,6 +36,34 @@ $(function() {
 });
 });
 
+let isMobile = {
+	Android: function() {return navigator.userAgent.match(/Android/i);},
+	BlackBerry: function() {return navigator.userAgent.match(/BlackBerry/i);},
+	iOS: function() {return navigator.userAgent.match(/iPhone|iPad|iPod/i);},
+	Opera: function() {return navigator.userAgent.match(/Opera Mini/i);},
+	Windows: function() {return navigator.userAgent.match(/IEMobile/i);},
+	any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());}
+};
+
+let body=document.querySelector('body');
+if(isMobile.any()){
+  body.classList.add('touch');
+  let arrow=document.querySelectorAll('.arrow');
+for(i=0; i<arrow.length; i++){
+    let thisLink=arrow[i].previousElementSibling;
+    let subMenu=arrow[i].nextElementSibling;
+    let thisArrow=arrow[i];
+
+    thisLink.classList.add('father');
+    arrow[i].addEventListener('click', function(){
+      subMenu.classList.toggle('open');
+      thisArrow.classList.toggle('active');
+    });
+  } 
+}else{
+  body.classList.add('mouse');
+}
+
 var modalButton = $("[data-toggle=modal]");
 var closeModalButton = $(".modal__close");
 modalButton.on("click", openModal);
@@ -63,4 +91,24 @@ $(document).keyup(function(e) {
       modalOverlay.removeClass("modal__overlay--visible");
       modalDialog.removeClass("modal__dialog--visible");
     }
+});
+
+$(".form").each(function() {
+  $(this).validate({
+  errorClass: "invalid",
+  messages: {
+    name: {
+      required: "Please specify your name",
+      minlength: "The name must be at least two letters"
+    },
+    email: {
+      required: "We need your email address to contact you",
+      email: "email must be in the format of name@domain.com"
+    },
+    phone: {
+      required: "Mobile phone is nesessary",
+      minlength: "The phone must be at least 10 digits",
+    },
+  }
+});
 });
