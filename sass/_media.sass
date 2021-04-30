@@ -3,11 +3,17 @@
     color: $hover-link
   button:hover
     background-color: $button-hover
+@media (max-width: 1350px )
+  .history
+    max-width: 1140px
+  .review
+    &-card
+      justify-content: flex-start
+    &-block
+      margin-right: 80px
 @media (max-width:1200px)
   .container
     max-width: 960px
-  .container-2
-    max-width: 1014px
   .featured
     &-block
       grid: 1fr / 480px auto
@@ -25,9 +31,8 @@
     padding: 25px
   .example
     &-slider
-      width: 960px
       &__item
-        grid: 381px / 480px auto
+        grid: 1fr / 480px auto
       &__button
         &--prev
           left: -10px
@@ -44,13 +49,27 @@
     height: 570px
   .king
     margin-bottom: 35px
+  .review
+    &-card
+      justify-content: space-between
+    &-block
+      margin-right: auto
+  .advertizing
+    &-wrapper
+      width: 366px
+      &::after
+        display: none
+      &::before
+        display: none
+    &-block
+      &__info
+        padding-right: 20px
+        padding-left: 10px
 @media (max-width: 992px)
   .container
     max-width: 700px
   .example
     &-slider
-      width: 700px
-      height: 442px
       &__button
         &--prev
           left: -20px
@@ -156,6 +175,13 @@
       order: 1
     &__button
       order: 2
+  .advertizing
+    &-wrapper
+      display: none
+  .review
+    padding-bottom: 80px
+    &-block
+      margin: auto
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -237,9 +263,6 @@
     margin-bottom: 13px
   .example
     &-slider
-      width: 100%
-      max-width: 576px
-      height: 100%
       &__item
         grid: 250px auto / 1fr
         grid-column: unset
@@ -293,6 +316,16 @@
     &__title
       font-size: 28px
       line-height: 36px
+  .review
+    padding-top: 134px
+    &::after
+      height: 124px
+    &-block
+      margin: 0
+      &__title
+        font-size: 32px
+        line-height: 40px
+        margin-bottom: 28px
 @media ( max-width: 576px )
   .container-2
     max-width: 565px
@@ -504,6 +537,26 @@
   .future
     margin-bottom: 20px
     height: 48px
+  .review
+    &-block
+      &__title
+        font-size: 24px
+        line-height: 32px
+        margin-bottom: 8px
+    &__text
+      margin-bottom: 0
+      margin-top: 0
+      line-height: 27px
+      font-size: 14px
+  .email
+    display: flex
+    flex-direction: column
+    margin-bottom: 0
+    &__input
+      width: 100%
+      margin-bottom: 12px
+    &__button
+      width: 100%
 @media ( max-width: 592px )
   .hero
     &-menu
@@ -513,8 +566,6 @@
 @media screen and (min-width: 320px) and (max-width: 479px)
   .container
     max-width: 288px
-  .container-2
-    max-width: 318px
   .navbar
     &-top
       width: 272px
@@ -620,3 +671,20 @@
       width: 280px
   .all
     padding-bottom: 0
+  .review
+    &::after
+      height: 125px
+    &__text
+      height: 146px
+  .email
+    display: flex
+    flex-direction: column
+    margin-bottom: 0
+    &__input
+      height: 48px
+    &__button
+      height: 48px
+      font-size: 16px
+      line-height: 22px
+      padding-top: 13px
+      padding-bottom: 13px

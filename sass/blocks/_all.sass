@@ -4,7 +4,7 @@
     display: flex
     justify-content: space-between
     flex-wrap: wrap
-    margin-bottom: 32px
+    margin-bottom: 48px
   &__title
     font-family: 'Roboto',sans-serif
     font-style: normal
@@ -16,13 +16,14 @@
     margin-top: 0
     margin-bottom: 16px
   &__subtitle
+    max-width: 602px
     font-family: 'Open Sans', sans-serif
     font-weight: 400
     font-size: 18px
     line-height: 32px
     color: $text
     margin-top: 0
-    margin-bottom: 48px
+    margin-bottom: 46px
   &-user
     width: 100%
     display: flex
@@ -34,17 +35,20 @@
   &-button
     display: flex
     align-items: center
+    justify-content: center
     margin: auto
     width: 192px
     height: 48px
-    border: 1px solid blue
+    border: 2px solid #1565D8
     border-radius: 8px
-    padding: 13px 22px 13px 24px
+    // padding: 13px 26px 13px 20px
   &__link
     font-weight: bold
     font-size: 16px
     line-height: 22px
     color: $watch
+  &__icon
+    margin-left: 6px
   &__block
     &::before
       content: ''

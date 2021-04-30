@@ -2,7 +2,7 @@
   position: relative
   background-color: $footer
   padding-bottom: 138px
-  padding-top: 175px
+  padding-top: 185px
   &::after
     content: ''
     position: absolute
@@ -19,8 +19,10 @@
   &-card
     display: flex
     align-items: center
-    justify-content: space-between
+    justify-content: flex-end
   &-block
+    margin-right: 146px
+    max-width: 555px
     &__title
       font-family: 'Roboto', sans-serif
       font-style: normal
@@ -37,7 +39,7 @@
     font-size: 16px
     line-height: 28px
     color: $text
-    max-width: 555px
+    margin-bottom: auto
 .email
   font-family: 'Open Sans', sans-serif
   display: flex
@@ -103,7 +105,7 @@
       padding-right: 56px
       padding-left: 24px
   &__image
-    width: 450px
+    width: 100%
     height: 212px
     object-fit: cover
     border-radius: 12px
