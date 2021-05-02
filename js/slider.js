@@ -11,3 +11,17 @@ const exampleSider = new Swiper('.example-slider', {
   },
 
 });
+
+const attractionSider = new Swiper('.attraction-slider', {
+  keyboard: {
+    enabled: true,
+  },
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.attraction-slider__button--next',
+    prevEl: '.attraction-slider__button--prev',
+  },
+
+});

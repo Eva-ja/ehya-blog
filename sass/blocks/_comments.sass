@@ -1,0 +1,128 @@
+.comments
+  padding-bottom: 88px
+  &__title
+    font-family: 'Roboto', sans-serif
+    font-weight: bold
+    font-size: 24px
+    line-height: 32px
+    letter-spacing: 0.2px
+    margin-bottom: 16px
+    margin-top: 0
+    color: $dark
+  &__text
+    font-family: 'Open Sans', sans-serif
+    font-weight: normal
+    font-size: 16px
+    line-height: 28px
+    color: $text
+    margin-top: 0
+    margin-bottom: 36px
+  &-user
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-top: 1px solid #E5EAF4
+    border-bottom: 1px solid #E5EAF4
+    padding-top: 20px
+    padding-bottom: 20px
+    margin-bottom: 64px
+    &__main
+      display: flex
+      align-items: center
+    &__name
+      color: #183B56
+    &__date
+      font-family: 'Open Sans', sans-serif
+      font-weight: 600
+      font-size: 14px
+      line-height: 20px
+      color: $text
+  &__small
+    font-weight: bold
+    font-size: 36px
+    line-height: 48px
+    font-family: 'Roboto', sans-serif
+    margin-top: 0
+    margin-bottom: 24px
+    letter-spacing: 0.2px
+    color: $dark
+  &-people
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-bottom: 24px
+    &__main
+      display: flex
+      align-items: center
+    &__name
+      color: #183B56
+    &__block
+      background-color: $comment-text
+      border-radius: 0 16px 16px 16px
+      padding: 20px
+      width: 555px
+      overflow: hidden
+    &__info
+      font-family: 'Open Sans', sans-serif
+      font-weight: normal
+      font-size: 16px
+      line-height: 28px
+      color: $text
+      margin-top: 0
+      margin-bottom: 0
+.comment
+  position: relative
+  overflow: hidden
+  border-radius: 8px
+  height: 64px
+  width: 750px
+  border: 1px solid #E5EAF4
+  background-color: $light
+  margin-bottom: 0
+  margin-top: 32px
+  &:before
+    content: ''
+    position: absolute
+    top: 12px
+    left: 16px
+    margin: auto 0
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    background: url('../img/comment-girl.png') no-repeat
+    background-size: cover
+    z-index: 5
+  &__input
+    position: absolute
+    right: 0
+    left: 0
+    top: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    padding-left: 72px
+    padding-right: 185px
+    background-color: $light
+    border: none
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: #959EAD
+    outline: none
+  &__button
+    position: absolute
+    right: 12px
+    top: 12px
+    bottom: 12px
+    display: block
+    width: 156px
+    height: 40px
+    padding: 9px 4px
+    background-color: $watch
+    border-radius: 8px
+    text-decoration: none
+    color: $light
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    text-align: center

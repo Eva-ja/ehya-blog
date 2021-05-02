@@ -1,0 +1,107 @@
+.attraction
+  padding-top: 0
+  padding-bottom: 56px
+  &-slider
+    width: 750px
+    height: 360px
+    border-radius: 16px
+    margin-bottom: 12px
+    &_image
+      width: 750px
+      height: 360px
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 54px
+      height: 56px
+      background-repeat: no-repeat
+      background-size: 14px 18px
+      background-position: center
+      outline: none
+      border: none
+      cursor: pointer
+      background-color: $watch
+      border-radius: 50%
+      &--prev
+        background-image: url('../img/prev-arrow.svg')
+        left: -27px
+        z-index: 10
+      &--next
+        background-image: url('../img/next-arrow.svg')
+        right: -27px
+        z-index: 10
+  &__signature
+    display: block
+    margin-bottom: 20px
+  &-block
+    &__title
+      margin-top: 0
+      margin-bottom: 0
+      font-family: Roboto
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 48px
+      letter-spacing: 0.2px
+      color: $dark
+    &__text
+      font-family: 'Open Sans', sans-serif
+      font-size: 16px
+      line-height: 28px
+      color: $text
+      margin-top: 0
+      margin-bottom: 0
+    &__small
+      font-family: 'Roboto', sans-serif
+      letter-spacing: 0.2px
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      margin-bottom: 10px
+      margin-top: 10px
+      color: $dark
+  &-quote
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 57px 64px
+    border-radius: 16px
+    margin-top: 28px
+    margin-bottom: 56px
+    width: 750px
+    height: 570px
+    background-color: $watch
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      background-repeat: no-repeat
+      background-image: url('../img/Oval.svg')
+      width: 232px
+      height: 258px
+    &__title
+      font-family: 'Roboto', sans-serif
+      font-weight: bold
+      font-size: 36px
+      line-height: 60px
+      color: $light
+      letter-spacing: 0.09px
+      text-align: center
+      margin-top: 26px
+      margin-bottom: 16px
+    &__text
+      font-family: 'Open Sans', sans-serif
+      font-weight: normal
+      font-size: 18px
+      line-height: 25px
+      text-align: center
+      margin-top: 0
+      margin-bottom: 15px
+      color: $light
+    &__image
+      width: 120px
+      height: 120px
+      border-radius: 8px
