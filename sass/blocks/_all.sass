@@ -36,12 +36,13 @@
     display: flex
     align-items: center
     justify-content: center
+    display: block
     margin: auto
     width: 192px
     height: 48px
     border: 2px solid #1565D8
     border-radius: 8px
-    // padding: 13px 26px 13px 20px
+    padding: 13px 22px 13px 24px
   &__link
     font-weight: bold
     font-size: 16px
@@ -49,16 +50,6 @@
     color: $watch
   &__icon
     margin-left: 6px
-  &__block
-    &::before
-      content: ''
-      position: absolute
-      top: 0
-      left: 0
-      right: 0
-      bottom: 0
-      background: linear-gradient(180deg, rgba(24, 59, 86, 0.0001) 0%, #152532 100%)
-      z-index: -1
 .blog
   position: relative
   display: flex
@@ -121,3 +112,24 @@
   margin-bottom: 82px
 .hide
   display: none
+.all
+  &-block
+    &__link
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 0
+      top: 0
+      width: 100%
+      height: 100%
+      object-fit: cover
+      z-index: -2
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background: linear-gradient(180deg, rgba(24, 59, 86, 0.0001) 0%, #152532 100%)
+        z-index: -1

@@ -3,7 +3,7 @@
   background-color: $footer
   padding-bottom: 138px
   padding-top: 185px
-  z-index: -2
+  // z-index: -2
   &::after
     content: ''
     position: absolute
@@ -17,7 +17,7 @@
     background-size: cover
     background-color: $light
     height: 174px
-    z-index: -1
+    z-index: 100
   &-card
     display: flex
     align-items: center
@@ -74,12 +74,13 @@
 .advertizing
   &-wrapper
     width: 466px
+    height: 385px
     position: relative
     &::before
       content: ''
       position: absolute
       top: 42px
-      right: -51px
+      right: -55px
       background-image: url('../img/blue-block.svg')
       background-repeat: no-repeat
       width: 237px
@@ -89,8 +90,8 @@
     &::after
       content: ''
       position: absolute
-      bottom: -51px
-      left: -61px
+      bottom: -40px
+      left: -59px
       background-image: url('../img/Base.svg')
       background-repeat: no-repeat
       width: 237px
@@ -100,15 +101,16 @@
   &-block
     position: relative
     background-color: $light
-    padding: 8px 8px 32px 8px
+    padding: 8px 7px 32px 9px
     box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.15)
     border-radius: 16px
     &__info
-      padding-right: 56px
-      padding-left: 24px
+      padding-right: 54px
+      padding-left: 26px
   &__image
     width: 100%
     height: 212px
+    margin-bottom: 23px
     object-fit: cover
     border-radius: 12px
   &__title
@@ -118,7 +120,7 @@
     font-weight: bold
     font-size: 24px
     line-height: 32px
-    margin-top: 28px
+    margin-top: 0
     margin-bottom: 12px
   &__text
     font-family: 'Open Sans', sans-serif
@@ -130,7 +132,8 @@
     margin-top: 0
     margin-bottom: 0
 .line
+  background-color: $footer
   &-section
     height: 1px
     width: 100%
-    background-color: #1A3245
+    background-color: #767676

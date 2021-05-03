@@ -1,5 +1,6 @@
 .introduction
-  padding-top: 85px
+  position: relative
+  padding-top: 173px
   padding-bottom: 104px
   &__text
     margin-top: 0
@@ -20,6 +21,7 @@
       font-size: 14px
       line-height: 20px
       color: $text
+      align-items: flex-end
   &__image
     width: 750px
     height: 360px
@@ -27,7 +29,7 @@
     border-radius: 16px
     margin-bottom: 12px
   &__signature
-    margin-bottom: 20px
+    margin-bottom: 17px
   &__title
     font-family: 'Roboto', sans-serif
     font-weight: bold
@@ -38,24 +40,59 @@
     margin-top: 0
     margin-bottom: 0
   &__programm
+    font-family: 'Open Sans', sans-serif
+    color: $text
+    font-size: 16px
+    line-height: 26px
     margin-top: 0
     margin-bottom: 16px
   &__story
+    font-family: 'Open Sans', sans-serif
+    color: $text
     margin-top: 0
     margin-bottom: 11px
+    font-size: 16px
+    line-height: 26px
   &__food
+    font-family: 'Open Sans', sans-serif
+    font-size: 16px
+    color: $text
+    line-height: 28px
     margin-top: 0
     margin-bottom: 0
-  &-small
-    &__title
-      font-family: 'Roboto', sans-serif
-      font-weight: bold
-      font-size: 24px
-      line-height: 32px
-      letter-spacing: 0.2px
-      color: $dark
-      margin-top: 0
-  .programm
-    margin-bottom: 4px
-  .food
-    margin-bottom: 16px
+  &__subtitle
+    font-family: 'Roboto', sans-serif
+    font-weight: bold
+    font-size: 24px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: $dark
+    margin-top: 0
+.programm
+  margin-bottom: 4px
+.food
+  margin-bottom: 16px
+.share
+  position: absolute
+  top: 172px
+  left: 105px
+  &__text
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    margin-top: 0
+    color: $text
+    margin-bottom: 33px
+  &-menu
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__ul
+    margin: 0
+    padding: 0
+  &-item
+    list-style: none
+    margin-bottom: 29px

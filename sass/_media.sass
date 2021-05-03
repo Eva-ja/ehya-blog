@@ -41,6 +41,9 @@
           left: -10px
         &--next
           right: -10px
+    &-title
+      &__link
+        height: 72px
     &-information
       padding: 32px 32px 32px 32px
     &-title
@@ -77,16 +80,15 @@
       margin-right: 61px
     &__services
       margin-right: 61px
+  .share
+    position: absolute
+    top: 172px
+    left: 50px
 @media (max-width: 992px)
   .container
     max-width: 700px
-  .example
-    &-slider
-      &__button
-        &--prev
-          left: -20px
-        &--next
-          right: -20px
+  .contant
+    max-width: 700px
   .body
     &::after
       height: 675px
@@ -127,9 +129,9 @@
         margin-bottom: 28px
       &__button
         position: absolute
-        bottom: 67px
-        right: 50%
-        transform: translateX(50%)
+        bottom: 68px
+        left: 50%
+        transform: translate(-50%)
         max-width: 173px
         height: 40px
         padding: 9px 20px 9px 18px
@@ -142,10 +144,11 @@
     height: 440px
     margin-bottom: 10px
   .last
-    padding-bottom: 111px
+    padding-bottom: 83px
     position: relative
     &-wrapper
       flex-wrap: wrap
+      margin-bottom: 28px
     &-main
       &__button
         position: absolute
@@ -175,13 +178,19 @@
       &__item
         grid: 1fr / 300px auto
         min-height: 440px
+      &__button
+        &--prev
+          left: -20px
+        &--next
+          right: -20px
     &-title
       &__link
         display: block
         line-height: 40px
         font-size: 26px
+        height: 120px
     &__text
-      height: 72px
+      height: 96px
   .all
     &__subtitle
       margin-bottom: 28px
@@ -216,10 +225,96 @@
     &__text
       width: 100%
       text-align: center
+  .avia
+    &__title
+      width: 100%
+      margin-left: 0
+  .introduction
+    &__image
+      max-width: 700px
+  .attraction
+    &-slider
+      width: 700px
+    &-quote
+      width: 700px
+      &__title
+        font-size: 32px
+  .pictures
+    &-block
+      grid-gap: 20px
+  .first
+    grid-row: unset
+    grid-column: span 2
+  .comment
+    width: 700px
+  .comments
+    &-mobile
+      display: flex
+    &__text
+      margin-bottom: 78px
+    &-mobile
+      margin-bottom: 30px
+  .share
+    display: none
 @media (max-width: 767px)
   .container
     max-width: 576px
     width: 92%
+  .contant
+    max-width: 576px
+    width: 92%
+  .introduction
+    &__image
+      max-width: 700px
+      max-width: 576px
+      width: 100%
+  .attraction
+    &-slider
+      max-width: 576px
+      width: 100%
+      &__button
+        &--next
+          width: 39px
+          height: 40px
+          right: -17px
+        &--prev
+          width: 39px
+          height: 40px
+          left: -17px
+    &-quote
+      max-width: 576px
+      height: 500px
+      width: 100%
+      padding: 30px 44px
+      &__title
+        font-size: 28px
+        line-height: 50px
+  .pictures
+    &-block
+      grid-gap: 20px
+  .comments
+    &-people
+      flex-direction: column
+      margin-bottom: 20px
+      &__block
+        height: 152px
+        width: 100%
+        margin-top: 16px
+        padding: 16px
+      &__info
+        font-size: 14px
+        line-height: 24px
+        height: 120px
+        overflow: auto
+  .comment
+    &__form
+      margin-top: 24px
+  .information
+    display: none
+  .about
+    display: block
+  .comment
+    width: 100%
   .body
     &::after
       height: 575px
@@ -322,12 +417,14 @@
         font-size: 27px
         line-height: 32px
         margin-bottom: 10px
+        height: 72px
     &-info
       &__offer
         margin-bottom: 4px
     &__text
       margin-bottom: 25px
       line-height: 27px
+      height: 72px
     &-information
       border-radius: 0 0 16px 16px
   .all
@@ -602,6 +699,8 @@
         font-size: 24px
         line-height: 32px
         margin-bottom: 8px
+        z-index: 200
+        position: relative
     &__text
       margin-bottom: 0
       margin-top: 0
@@ -651,6 +750,225 @@
       line-height: 20px
     &__item
       margin-bottom: 15px
+  .avialine
+    &::before
+      height: 490px
+  .avia
+    padding-top: 60px
+    padding-bottom: 116px
+    &__title
+      font-size: 32px
+      line-height: 40px
+  .introduction
+    padding-bottom: 39px
+    padding-top: 100px
+    &__text
+      font-size: 16px
+      line-height: 28px
+      margin-bottom: 37px
+    &-user
+      margin-bottom: 32px
+      &__date
+        visibility: hidden
+        width: 59px
+        height: 14px
+        position: relative
+        &::after
+          content: 'MAY, 2 2019'
+          visibility: visible
+          position: absolute
+          display: block
+          top: 0
+          right: 0
+          font-weight: 600
+          font-size: 10px
+          line-height: 14px
+    &__image
+      margin-bottom: 8px
+      height: 200px
+    &__signature
+      font-size: 12px
+      line-height: 16px
+      margin-bottom: 59px
+    &__title
+      font-size: 21px
+      line-height: 32px
+      letter-spacing: 0.2px
+      margin-bottom: 17px
+    &__programm
+      font-size: 12px
+      line-height: 22px
+      margin-bottom: 39px
+    &__subtitle
+      font-size: 20px
+      line-height: 24px
+      margin-bottom: 10px
+    &__story
+      font-size: 12px
+      line-height: 22px
+      margin-bottom: 22px
+    &__food
+      font-size: 12px
+      line-height: 22px
+  .attraction
+    padding-bottom: 76px
+    &-slider
+      height: 200px
+      margin-bottom: 8px
+    &__signature
+      font-size: 12px
+      line-height: 16px
+      margin-bottom: 22px
+    &-block
+      &__title
+        font-size: 24px
+        line-height: 32px
+        margin-bottom: 7px
+      &__text
+        font-size: 12px
+        line-height: 22px
+        margin-bottom: 31px
+      &__small
+        font-size: 20px
+        line-height: 24px
+        margin-bottom: 14px
+    &-quote
+      padding: 0
+      padding-top: 54px
+      height: auto
+      margin-bottom: 0
+      border-radius: 0
+      margin-top: 0
+      &::after
+        display: none
+      &__text
+        font-weight: normal
+        font-size: 16px
+        line-height: 22px
+        margin-bottom: 24px
+      &__image
+        width: 96px
+        height: 96px
+        margin-bottom: -50px
+      &__title
+        font-size: 23px
+        line-height: 30px
+        margin-bottom: 62px
+        margin-top: 34px
+        letter-spacing: 1px
+  .great
+    margin-bottom: 0
+  .quote
+    background-color: $watch
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      background-repeat: no-repeat
+      background-image: url('../img/oval-2.svg')
+      width: 103px
+      height: 198px
+  .pictures
+    padding-top: 110px
+    padding-bottom: 33px
+    &-block
+      grid-template-rows: 200px 200px
+    &__text
+      font-size: 12px
+      line-height: 22px
+      margin-bottom: 91px
+    &__signature
+      font-size: 12px
+      line-height: 16px
+  .comments
+    padding-bottom: 0
+    &-mobile
+      &__text
+        font-size: 14px
+        line-height: 20px
+      &__item
+        font-size: 16px
+        line-height: 18px
+        height: 18px
+      &__link
+        font-size: 16px
+        line-height: 18px
+        height: 18px
+        display: block
+      &__ul
+        height: 18px
+      &__image
+        width: 18px
+        height: 18px
+    &__title
+      font-size: 20px
+      line-height: 24px
+      margin-bottom: 12px
+    &__text
+      font-size: 12px
+      line-height: 22px
+    &-user
+      padding-top: 16px
+      padding-bottom: 16px
+      margin-bottom: 25px
+      &__date
+        visibility: hidden
+        width: 59px
+        height: 14px
+        position: relative
+        &::after
+          content: 'MAY, 2 2019'
+          visibility: visible
+          position: absolute
+          display: block
+          top: 0
+          right: 0
+          font-weight: 600
+          font-size: 10px
+          line-height: 14px
+    &__small
+      font-size: 24px
+      line-height: 32px
+      margin-bottom: 24px
+    &-people
+      flex-direction: column
+      &__block
+        height: 152px
+        width: 100%
+        margin-top: 16px
+        padding: 16px
+      &__info
+        font-size: 14px
+        line-height: 24px
+        height: 120px
+        overflow: auto
+  .comment
+    &__input
+      padding-left: 62px
+      padding-right: 175px
+      font-size: 14px
+      line-height: 20px
+  .english
+    display: block
+  .russian
+    display: none
+  .avialine
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      left: 0
+      background-image: url('../img/man-avia.png')
+      background-repeat: no-repeat
+      background-attachment: local
+      background-position: center center
+      background-size: cover
+      background-color: #464646
+      height: 360px
+      z-index: -1
 @media ( max-width: 592px )
   .hero
     &-menu
@@ -660,6 +978,8 @@
 @media screen and (min-width: 320px) and (max-width: 479px)
   .container
     max-width: 288px
+  .contant
+    width: 272px
   .smaller
     max-width: 272px
   .history
@@ -724,6 +1044,10 @@
     &-title
       &__mother
         margin-bottom: 8px
+  .last
+    &__text
+      height: auto
+      min-height: 48px
   .popular
     &-main
       &__title
@@ -804,3 +1128,49 @@
       padding-bottom: 13px
   .small
     height: auto
+  .pictures
+    &-block
+      grid-template-rows: 176px 100px
+      grid-gap: 12px
+  .comment
+    &__form
+      height: 60px
+      margin-bottom: 12px
+      filter: drop-shadow(0px 15px 25px rgba(0, 0, 0, 0.06))
+    &__button
+      display: none
+    &__input
+      padding-left: 62px
+      padding-right: 20px
+  .comments
+    &-button
+      display: block
+    &-user
+      &__avatar
+        margin-right: 12px
+  .avialine
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      left: 0
+      background-image: url('../img/man-avia.png')
+      background-repeat: no-repeat
+      background-attachment: local
+      background-position: center center
+      background-size: cover
+      background-color: #464646
+      height: 360px
+      z-index: -1
+  .introduction
+    padding-top: 0
+    padding-bottom: 29px
+    &__subtitle
+      font-size: 18px
+  .attraction
+    &-block
+      &__title
+        word-wrap: break-word
+  .quote
+    height: 575px

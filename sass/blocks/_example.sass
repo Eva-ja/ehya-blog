@@ -7,10 +7,6 @@
     align-items: center
     &__title
       @include block-title
-    &__link
-      @include block-button
-      display: flex
-      align-items: center
     &__subtitle
       @include block-subtitle
   &-slider
@@ -87,6 +83,9 @@
     &__link
       font-family: 'Roboto', sans-serif
       display: block
+      overflow: auto
+      height: 96px
+
       font-style: normal
       font-weight: bold
       font-size: 31px

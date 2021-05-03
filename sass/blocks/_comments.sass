@@ -70,6 +70,30 @@
       color: $text
       margin-top: 0
       margin-bottom: 0
+  &-mobile
+    display: none
+    &__text
+      font-family: 'Open Sans', sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+      margin-top: 0
+      color: $text
+      margin-bottom: 0
+      margin-right: 24px
+    &__menu
+      display: flex
+      align-items: center
+    &__ul
+      display: flex
+      align-items: center
+      margin: 0
+      padding: 0
+    &__item
+      list-style: none
+      margin-right: 24px
 .comment
   position: relative
   overflow: hidden
@@ -126,3 +150,19 @@
     font-size: 16px
     line-height: 22px
     text-align: center
+.about
+  display: none
+.comments
+  &-button
+    font-family: 'Open Sans', sans-serif
+    font-weight: bold
+    background-color: #1565D8
+    border-radius: 8px
+    padding: 9px 5px
+    width: 182px
+    height: 40px
+    font-size: 16px
+    line-height: 22px
+    color: $light
+    text-align: center
+    display: none

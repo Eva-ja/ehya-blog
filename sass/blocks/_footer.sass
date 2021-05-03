@@ -1,5 +1,5 @@
 .footer
-  padding-top: 118px
+  padding-top: 125px
   padding-bottom: 82px
   background-color: $footer
   color: $footer-text
@@ -11,14 +11,20 @@
     align-items: flex-start
     justify-content: flex-start
     flex-wrap: wrap
-  &__logo
-    width: 90px
-    height: 28px
+  &-logo
+    &__image
+      width: 90px
+      height: 28px
+    &__link
+      width: 90px
+      height: 28px
+      display: block
   &__text
     font-size: 15px
     line-height: 28px
     width: 240px
     margin-bottom: 32px
+    margin-top: 28px
   &-menu
     margin: 0
     padding: 0
@@ -40,6 +46,8 @@
     list-style: none
     color: inherit
     margin-bottom: 24px
+    font-size: 16px
+    line-height: 22px
     &:last-child
       margin-bottom: 0
   &__link
@@ -50,7 +58,7 @@
     flex-direction: column
     align-items: center
     margin-right: auto
-    flex-basis: 100%
+    flex-basis: 97%
     margin-top: 96px
     &__image
       width: 56px

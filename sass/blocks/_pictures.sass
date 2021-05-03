@@ -1,5 +1,6 @@
 .pictures
-  margin-bottom: 36px
+  padding-top: 56px
+  padding-bottom: 49px
   &__text
     font-family: 'Open Sans', sans-serif
     font-weight: normal
@@ -20,16 +21,17 @@
     color: $text
   &-block
     display: grid
-    grid: 1fr / 1fr auto
-    grid-column: span 2
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 225px 225px
     grid-gap: 30px
     &__image
       border-radius: 16px
 .first
   grid-row: span 2
-  width: 360px
-  height: 480px
+  width: 100%
+  height: 100%
   object-fit: cover
 .two
-  width: 360px
-  height: 225px
+  width: 100%
+  height: 100%
+  object-fit: cover
