@@ -98,16 +98,16 @@ $(".form").each(function() {
   errorClass: "invalid",
   messages: {
     name: {
-      required: "Please specify your name",
-      minlength: "The name must be at least two letters"
+      required: "Пожалуйста, укажите имя",
+      minlength: "Имя должно быть не меньше 2 букв"
     },
     email: {
-      required: "We need your email address to contact you",
-      email: "email must be in the format of name@domain.com"
+      required: "Укажите имэйл",
+      email: "Email должен быть в формате name@domain.com"
     },
     phone: {
-      required: "Mobile phone is nesessary",
-      minlength: "The phone must be at least 10 digits",
+      required: "Мобильный телефон обязателен",
+      minlength: "Номер должен быть минимум 10 символов",
     },
   }
 });
