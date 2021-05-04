@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,47 +21,47 @@
           <img src="img/Logo.png" alt="Icon: Logo" class="navbar-top__image">
         </a>
 
-        <nav class="menu">
-          <ul class="navbar-menu">
-            <li class="navbar-menu__item">
-              <a href="index.html" class="navbar-menu__link">Домой</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Лендинги <img src="img/angle-down.svg" alt="down"></a>
-              <img src="img/angle-down.svg" alt="" class="navbar-menu__arrow arrow">
-              <ul class="sub-menu__list">
-                <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Wix</a>
-                </li>
-                <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">WordPress</a>
-                </li>
-                <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">SquareSpace</a>
-                </li>
-              </ul>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Страницы <img src="img/angle-down.svg" alt="down"></a>
-              <img src="img/angle-down.svg" alt="" class="navbar-menu__arrow arrow">
-              <ul class="sub-menu__list">
-                <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Главная</a>
-                </li>
-                <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Блог</a>
-                </li>
-                <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Статьи</a>
-                </li>
-              </ul>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Помощь</a>
-            </li>
-          </ul>
-          <!-- navbar-menu -->
-        </nav>
+      <nav class="menu">
+        <ul class="navbar-menu">
+          <li class="navbar-menu__item">
+            <a href="index.html" class="navbar-menu__link">Домой</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Лендинги <img src="img/angle-down.svg" alt="down"></a>
+            <img src="img/angle-down.svg" alt="" class="navbar-menu__arrow arrow">
+            <ul class="navbar-menu__ul">
+              <li class="navbar-menu__li">
+                <a href="#" class="navbar-menu__a">Wix</a>
+              </li>
+              <li class="navbar-menu__li">
+                <a href="#" class="navbar-menu__a">WordPress</a>
+              </li>
+              <li class="navbar-menu__li">
+                <a href="#" class="navbar-menu__a">SquareSpace</a>
+              </li>
+            </ul>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Страницы <img src="img/angle-down.svg" alt="down"></a>
+            <img src="img/angle-down.svg" alt="" class="navbar-menu__arrow arrow">
+            <ul class="navbar-menu__ul">
+              <li class="navbar-menu__li">
+                <a href="#" class="navbar-menu__a">Главная</a>
+              </li>
+              <li class="navbar-menu__li">
+                <a href="#" class="navbar-menu__a">Блог</a>
+              </li>
+              <li class="navbar-menu__li">
+                <a href="#" class="navbar-menu__a">Статьи</a>
+              </li>
+            </ul>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Помощь</a>
+          </li>
+        </ul>
+        <!-- navbar-menu -->
+      </nav>
 
         <a data-toggle="modal" href="#" class="navbar-top__link">Получить</a>
 
@@ -103,7 +102,7 @@
         </div>
         <!--introduction-user -->
         <img src="img/introduction.png" alt="Изображение" class="introduction__image">
-        <figcaption class="introduction__signature signature">This is a caption on this photo for reference</figcaption>
+        <span class="introduction__signature signature">This is a caption on this photo for reference</span>
       </div>
       <!-- introduction-wrapper -->
       <h1 class="introduction__title">Microsoft Patch Management для домашних пользователей</h1>
@@ -168,7 +167,7 @@
             </div>
             <div class="swiper-slide">
               <div class="attraction-slider__item">
-                <img src="img/introduction.png" alt="Фото: достопримичательности" class="attraction-slider__image">
+                <img src="img/restorant.png" alt="Фото: достопримичательности" class="attraction-slider__image">
               </div>
             </div>
             <div class="swiper-slide">
@@ -180,8 +179,8 @@
           <!-- swiper-wrapper -->
         </div>
         <!-- attraction-slider -->
-        <div class="attraction-slider__button attraction-slider__button--prev"></div>
-        <div class="attraction-slider__button attraction-slider__button--next"></div>
+        <div class="attraction-swiper__button attraction-swiper__button--prev"></div>
+        <div class="attraction-swiper__button attraction-swiper__button--next"></div>
         <span class="attraction__signature signature">This is a caption on this photo for reference</span>
       </div>
       <!-- /.attraction-swiper -->
@@ -310,7 +309,7 @@
         <!-- comments-people__main -->
       </div>
       <!--comments-people -->
-      <form action="#" class="comment__form comment">
+      <form action="#" class="comments__form comment">
         <div class="comment-avatar">
           <input type="text" placeholder="Написать комментарий..." class="comment__input">
         </div>
@@ -327,8 +326,8 @@
         <div class="review-block">
           <h3 class="review-block__title"> <span class="review-block__line">Получите </span> наши истории на ваш почтовый
             ящик еженедельно.</h3>
-          <form action="#" class="email email__search">
-            <input type="text" placeholder="Your Email" class="email__input">
+          <form action="send.php" method="POST" class="email review__search form">
+            <div class="valid"><input type="email" placeholder="Your Email" class="email__input" placeholder="Email*" name="email" required></div>
             <a class="email__button button"> Начать </a>
           </form>
           <p class="review-text review__text">Получите ответ завтра, если отправите его до 9 вечера сегодня. Если мы
@@ -337,10 +336,10 @@
         <!-- /.review-block -->
         <div class="advertizing-wrapper">
           <div class="advertizing-block">
-            <img src="img/joystick.png" alt="Фото: Реклама" class="advertizing__image">
+            <img src="img/joystick.png" alt="Фото: Реклама" class="advertizing-block__image">
             <div class="advertizing-block__info">
-              <h3 class="advertizing__title">Лучшие статьи каждую неделю</h3>
-              <p class="advertizing-text advertizing__text">Наши предложения по страхованию везде одинаковы.</p>
+              <h3 class="advertizing-block__title">Лучшие статьи каждую неделю</h3>
+              <p class="advertizing-text advertizing-block__text">Наши предложения по страхованию везде одинаковы.</p>
             </div>
           </div>
           <!-- /.advertizing-block -->
@@ -351,17 +350,18 @@
     </div>
     <!-- /.container -->
   </section>
-  <section class="line">
+  
+  <div class="line">
     <div class="container history">
       <div class="line-section"></div>
     </div>
-  </section>
+  </div>
   
   <section class="footer">
     <div class="container footer-container">
       <div class="footer-wrapper">
         <div class="footer__information">
-          <a href="index.html" class="footer-logo__link"><img src="img/Logo.png" alt="Логотип"
+          <a href="#" class="footer-logo footer__logo"><img src="img/Logo.png" alt="Логотип"
               class="footer-logo__image"></a>
           <p class="footer__text">Создайте современный и креативный веб-сайт с crealand</p>
           <ul class="footer-menu">
@@ -405,7 +405,7 @@
           <ul class="footer__ul">
             <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Условия</a></li>
-            <li class="footer__item privacy"><a href="#" class="footer__link footer-new__link">Политика<br>
+            <li class="footer__item privacy"><a href="#" class="footer__link privacy__link">Политика<br>
                 конфиденциальности</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
           </ul>
@@ -430,48 +430,45 @@
     </div>
     <!-- /.container -->
   </section>
-
+  
   <section class="mobile mobile-menu">
     <div class="mobile-container">
       <div class="mobile-content">
-        <ul class="mobile-menu__main">
-          <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Домой</a></li>
-          <div class="line"></div>
-          <li class="mobile-menu__item">
-            <a href="#" class="parent mobile-menu__link">Лендинги <img src="img/angle-down.svg" alt="Больше"
-                class="mobile-menu__more"></a>
-            <ul class="mobile-menu__main">
-              <li class="mobile-menu__item"><a href="#" class="back mobile-menu__link">Назад</a></li>
-              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Wix</a></li>
-              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">WordPress</a></li>
-              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">SquareSpace</a></li>
-            </ul>
-          </li class="mobile-menu__item">
-          <div class="line"></div>
-          <li class="mobile-menu__item">
-            <a href="#" class="parent mobile-menu__link">Страницы <img src="img/angle-down.svg" alt="Больше"
-                class="mobile-menu__more"></a>
-            <ul class="mobile-menu__main">
-              <li class="mobile-menu__item"><a href="#" class="back mobile-menu__link">Назад</a></li>
-              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Главная</a></li>
-              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Блог</a></li>
-              <li class="mobile-menu__item"><a href="#" class="parent mobile-menu__link">Cтатьи</a></li>
-            </ul>
-          </li>
-          <div class="line"></div>
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Помощь</a></li>
-          <div class="line"></div>
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link ">Получить</a></li>
-          <div class="line"></div>
-        </ul>
+        <nav class="nav">
+          <ul class="mobile-menu__main">
+            <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Домой</a></li>
+            <li class="mobile-menu__item">
+              <a href="#" class="parent mobile-menu__link">Лендинги <img src="img/angle-down.svg" alt="Больше"
+                  class="mobile-menu__more"></a>
+              <ul class="mobile-menu__main">
+                <li class="mobile-menu__item"><a href="#" class="back mobile-menu__link">Назад</a></li>
+                <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Wix</a></li>
+                <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">WordPress</a></li>
+                <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">SquareSpace</a></li>
+              </ul>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="parent mobile-menu__link">Страницы <img src="img/angle-down.svg" alt="Больше"
+                  class="mobile-menu__more"></a>
+              <ul class="mobile-menu__main">
+                <li class="mobile-menu__item"><a href="#" class="back mobile-menu__link">Назад</a></li>
+                <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Главная</a></li>
+                <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Блог</a></li>
+                <li class="mobile-menu__item"><a href="#" class="parent mobile-menu__link">Cтатьи</a></li>
+              </ul>
+            </li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Помощь</a></li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link ">Получить</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
     <div class="overlay close"></div>
   </section>
-
+  
   <div class="modal" id="rating-modal">
     <div class="modal__overlay">
-
+  
     </div>
     <!-- modal__overlay -->
     <div class="modal__dialog modal__dialog--new">

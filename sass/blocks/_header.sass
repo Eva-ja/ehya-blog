@@ -68,7 +68,7 @@
 menu a.parent
   margin: 0 30px 0 0
 
-.sub-menu__list
+.navbar-menu__ul
   list-style: none
   position: absolute
   left: 0
@@ -82,11 +82,11 @@ menu a.parent
   border-radius: 8px
   text-align: left
 
-.sub-menu__item
+.navbar-menu__li
   padding: 12px 15px
   border-bottom: 1px solid rgba(255, 255, 255, 0.1)
 
-.sub-menu__link
+.navbar-menu__a
   color: #fff
   font-size: 14px
   color: white
@@ -135,13 +135,13 @@ menu a.parent
 
 .sub-menu__arrow
   transform: rotate(-90deg)
-body.mouse .navbar-menu > li:hover .sub-menu__list
+body.mouse .navbar-menu > li:hover .navbar-menu__ul
   display: block
 
-body.mouse .sub-menu__list > li:hover .sub-sub-menu__list
+body.mouse .navbar-menu__ul > li:hover .sub-sub-menu__list
   display: block
 
-body.touch .sub-menu__list.open
+body.touch .navbar-menu__ul.open
   display: block
 
 body.touch .sub-sub-menu__list.open

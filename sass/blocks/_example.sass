@@ -10,6 +10,46 @@
     &__subtitle
       @include block-subtitle
   &-slider
+    &__item
+      display: grid
+      grid: 1fr / 570px auto
+      grid-column: span 2
+      border-radius: 16px
+      box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
+      overflow: hidden
+      background-color: $light
+    &__link
+      font-family: 'Roboto', sans-serif
+      display: block
+      overflow: auto
+      height: 96px
+      font-style: normal
+      font-weight: bold
+      font-size: 31px
+      line-height: 48px
+      letter-spacing: 0.2px
+      color: #183B56
+      margin-bottom: 20px
+  &-information
+    padding: 32px 48px 32px 32px
+    border: 1px solid #E5EAF4
+    border-radius: 0 16px 16px 0
+  &-info
+    position: relative
+    &__offer
+      display: block
+      width: 141px
+      font-family: 'Open Sans', sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+      color: blue
+      background: rgba(54,179,126, 0.1 )
+      padding: 5px 14px
+      border-radius: 2000px
+      margin-bottom: 16px
     &__button
       position: absolute
       top: 50%
@@ -32,67 +72,24 @@
         background-image: url('../img/next-arrow.svg')
         right: -27px
         z-index: 10
-    &__item
-      display: grid
-      grid: 1fr / 570px auto
-      grid-column: span 2
-      border-radius: 16px
-      box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
-      overflow: hidden
-      background-color: $light
-  &-information
-    padding: 32px 48px 32px 32px
-    border: 1px solid #E5EAF4
-    border-radius: 0 16px 16px 0
-  &-info
-    position: relative
-    &__offer
-      display: block
-      width: 141px
-      font-family: 'Open Sans', sans-serif
-      font-style: normal
-      font-weight: 600
-      font-size: 16px
-      line-height: 22px
-      text-align: center
-      color: blue
-      background: rgba(54,179,126, 0.1 )
-      padding: 5px 14px
-      border-radius: 2000px
-      margin-bottom: 16px
-  &-photo
-    &__image
-      width: 100%
-      height: 100%
-      object-fit: cover
-      background-image: url(../img/country.png)
-      background-repeat: no-repeat
-      background-position: center
-      background-size: 100% 100%
-      background-size: cover
-    &__img
-      width: 100%
-      height: 100%
-      object-fit: cover
-      background-image: url(../img/popularV.png)
-      background-repeat: no-repeat
-      background-position: center
-      background-size: 100% 100%
-      background-size: cover
-  &-title
-    &__link
-      font-family: 'Roboto', sans-serif
-      display: block
-      overflow: auto
-      height: 96px
-
-      font-style: normal
-      font-weight: bold
-      font-size: 31px
-      line-height: 48px
-      letter-spacing: 0.2px
-      color: #183B56
-      margin-bottom: 20px
+  &__image
+    width: 100%
+    height: 100%
+    object-fit: cover
+    background-image: url(../img/country.png)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 100% 100%
+    background-size: cover
+  &__img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    background-image: url(../img/popularV.png)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 100% 100%
+    background-size: cover
   &__text
     font-family: 'Open Sans', sans-serif
     height: 64px
