@@ -33,17 +33,18 @@
       display: flex
       align-items: center
   &-button
-    display: flex
-    align-items: center
-    justify-content: center
-    display: block
     margin: auto
-    min-width: 192px
-    max-width: 195px
+    display: block
+    text-align: center
+    width: 196px
     height: 48px
     border: 2px solid #1565D8
     border-radius: 8px
     padding: 13px 22px 13px 24px
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+    color: $watch
   &__link
     font-family: 'Open Sans', sans-serif
     font-style: normal
@@ -54,8 +55,9 @@
     line-height: 21px
     color: $watch
   &__icon
+    vertical-align: middle
     width: 13px
-    height: 16px
+    height: 18px
     margin-left: 0
     margin-top: 0
 .blog
